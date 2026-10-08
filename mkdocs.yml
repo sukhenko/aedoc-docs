@@ -1,0 +1,36 @@
+site_name: Довідка AEDOC
+site_description: Документація АЕДок та еАкциз
+site_url: https://docs.aedoc.com.ua/
+copyright: © WebCheck — <a href="https://aedoc.com.ua">aedoc.com.ua</a>
+
+theme:
+  name: material
+  language: uk
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.highlight
+  palette:
+    primary: custom
+    accent: custom
+
+nav:
+  - Головна: index.md
+  - Отримувачу:
+      - Прийняти вхідний АЕД: aed/pryiom-vkhidnoho-aed.md
+
+extra_css:
+  - stylesheets/extra.css
+extra_javascript:
+  - javascripts/lightbox.js
+
+markdown_extensions:
+  - attr_list
+  - admonition
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
