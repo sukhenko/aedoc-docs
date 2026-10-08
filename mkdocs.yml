@@ -39,7 +39,8 @@ nav:
           - 4. Підпис і доступи: pershyi-zapusk/nastupni-kroky.md
       - Робота з АЕД:
           - aed/index.md
-          - Прийняти вхідний АЕД: aed/pryiom-vkhidnoho-aed.md
+          - АЕД №1:
+              - Прийняти вхідний АЕД №1: aed/pryiom-vkhidnoho-aed.md
       - Довідники:
           - dovidnyky/index.md
           - Користувачі ЕО та ключ ЕЦП: dovidnyky/korystuvachi-eo-kliuch.md
