@@ -41,6 +41,8 @@ nav:
           - aed/index.md
           - АЕД №1:
               - Прийняти вхідний АЕД №1: aed/pryiom-vkhidnoho-aed.md
+          - АЕД №4:
+              - Повернути товар на підставі АЕД №1: aed/aed4-povernennia.md
       - Довідники:
           - dovidnyky/index.md
           - Користувачі ЕО та ключ ЕЦП: dovidnyky/korystuvachi-eo-kliuch.md
