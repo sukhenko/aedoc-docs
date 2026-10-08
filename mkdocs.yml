@@ -25,6 +25,10 @@ nav:
   - Інтеграція:
       - integratsiia/index.md
       - Технічна документація: integratsiia/itdeptinfo.md
+      - Зберігання даних:
+          - integratsiia/zberigannia/index.md
+          - Тестування: integratsiia/zberigannia/testuvannia.md
+          - Зовнішнє сховище MS SQL: integratsiia/zberigannia/zovnishnie-skhovyshche.md
   - Перший запуск:
       - pershyi-zapusk/index.md
       - 1. Реєстрація в еАкциз: pershyi-zapusk/reiestratsiia-eo.md

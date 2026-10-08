@@ -18,3 +18,27 @@
 /* Примітка без заголовка — жовта смуга, як на aedoc.com.ua */
 .md-typeset .admonition.note{border-color:#D9B84A}
 .md-typeset .admonition.note>.admonition-title:empty{display:none}
+/* Бейджі, картки, виноски — розділ «Зберігання даних» */
+.md-typeset .badge{display:inline-block;font-size:.6rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:3px 9px;border-radius:4px;margin:0 0 .6em}
+.md-typeset .badge--done{background:#e8f0f9;color:#3D6BA0}
+.md-typeset .badge--dev{background:#faf3de;color:#a3822f}
+.md-typeset .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin:1em 0}
+.md-typeset .card,.md-typeset .promo{display:flex;flex-direction:column;gap:6px;background:#fff;border:1px solid #E5E7EB;border-left:4px solid #3D6BA0;border-radius:8px;padding:18px 22px;color:#1A1A1A!important;text-decoration:none;box-shadow:0 1px 3px rgba(0,0,0,.06);transition:box-shadow .15s}
+.md-typeset .card--dev,.md-typeset .promo{border-left-color:#D9B84A}
+.md-typeset .card:hover,.md-typeset .promo:hover{box-shadow:0 2px 10px rgba(0,0,0,.12)}
+.md-typeset .card>span:not(.badge),.md-typeset .promo>span:not(.badge){color:#6B7280;font-size:.7rem}
+.md-typeset .card .badge,.md-typeset .promo .badge{align-self:flex-start;margin:0}
+.md-typeset .promo{margin:1.5em 0}
+.md-typeset table.metrics{display:table;width:100%;max-width:640px}
+.md-typeset table.metrics tr:last-child td{font-weight:700;background:#f7f9fb}
+.md-typeset img.chart-img{max-width:900px}
+.md-typeset .callout{background:#f7f9fb;border-radius:8px;padding:16px 20px;margin:1em 0}
+.md-typeset .callout p:last-child{margin-bottom:0}
+.md-typeset .callout--gold{border-left:4px solid #D9B84A;border-radius:0 8px 8px 0}
+.md-typeset .note-small{font-size:.65rem;color:#6B7280;font-style:italic}
+.md-typeset .movegrid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:.8em 0 1.2em}
+.md-typeset .movecard{background:#fffaf0;border:1px solid #e6c877;border-radius:8px;padding:16px 18px}
+.md-typeset .movecard-icon{font-size:20px;margin-bottom:6px}
+.md-typeset .movecard-title{font-weight:700;margin:0 0 6px}
+.md-typeset .movecard-sub{font-size:.7rem;color:#6B7280;margin:0}
+@media (max-width:600px){.md-typeset .movegrid{grid-template-columns:1fr}}
