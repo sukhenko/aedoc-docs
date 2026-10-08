@@ -22,6 +22,13 @@ theme:
 
 nav:
   - Головна: index.md
+  - Інтеграція:
+      - integratsiia/index.md
+      - Технічна документація: integratsiia/itdeptinfo.md
+      - Зберігання даних:
+          - integratsiia/zberigannia/index.md
+          - Тестування: integratsiia/zberigannia/testuvannia.md
+          - Зовнішнє сховище MS SQL: integratsiia/zberigannia/zovnishnie-skhovyshche.md
   - Навчання роботи з АЕДок:
       - navchannia/index.md
       - Перший запуск:
@@ -39,13 +46,6 @@ nav:
           - Контрагенти ЕО (створення, доступ):
               - Новий контрагент ЕО: dovidnyky/dodaty-kontragenta-eo.md
               - Торгові об'єкти та доступи: dovidnyky/dostup-do-obiektiv.md
-  - Інтеграція:
-      - integratsiia/index.md
-      - Технічна документація: integratsiia/itdeptinfo.md
-      - Зберігання даних:
-          - integratsiia/zberigannia/index.md
-          - Тестування: integratsiia/zberigannia/testuvannia.md
-          - Зовнішнє сховище MS SQL: integratsiia/zberigannia/zovnishnie-skhovyshche.md
 
 extra_css:
   - stylesheets/extra.css
