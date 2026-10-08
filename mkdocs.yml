@@ -33,6 +33,7 @@ nav:
       - pershyi-zapusk/index.md
       - 1. Реєстрація в еАкциз: pershyi-zapusk/reiestratsiia-eo.md
       - 2. API-токен: pershyi-zapusk/api-token.md
+      - 3. Помічник додавання ЕО: pershyi-zapusk/pomichnyk-eo.md
   - Робота з АЕД:
       - aed/index.md
       - Прийняти вхідний АЕД: aed/pryiom-vkhidnoho-aed.md
