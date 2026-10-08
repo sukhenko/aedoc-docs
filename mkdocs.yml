@@ -1,6 +1,6 @@
 site_name: Довідка AEDOC
 site_description: Документація АЕДок та еАкциз
-site_url: https://sukhenko.github.io/aedoc-docs/
+site_url: https://docs.aedoc.com.ua/
 copyright: © WebCheck — <a href="https://aedoc.com.ua">aedoc.com.ua</a>
 
 theme:
