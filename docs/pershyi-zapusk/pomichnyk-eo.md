@@ -22,3 +22,5 @@
 ## КРОК 3: Завантаження об'єктів ЕО
 
 <img class="shot" src="https://aedoc.com.ua/wp-content/uploads/2026/06/image-6-1024x713.png" alt="КРОК 3: Завантаження об'єктів ЕО">
+
+**Далі:** [Налаштувати підпис і доступи](nastupni-kroky.md)
