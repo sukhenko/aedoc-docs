@@ -39,8 +39,9 @@ nav:
   - Довідники:
       - dovidnyky/index.md
       - Користувачі ЕО та ключ ЕЦП: dovidnyky/korystuvachi-eo-kliuch.md
-      - Торгові об'єкти та доступи: dovidnyky/dostup-do-obiektiv.md
-      - Новий контрагент ЕО: dovidnyky/dodaty-kontragenta-eo.md
+      - Контрагенти ЕО (створення, доступ):
+          - Новий контрагент ЕО: dovidnyky/dodaty-kontragenta-eo.md
+          - Торгові об'єкти та доступи: dovidnyky/dostup-do-obiektiv.md
 
 extra_css:
   - stylesheets/extra.css
