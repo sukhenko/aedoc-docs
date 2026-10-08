@@ -24,26 +24,15 @@ nav:
   - Головна: index.md
   - Інтеграція:
       - integratsiia/index.md
-      - Що таке AEDOC: integratsiia/pro-aedoc.md
-      - Вимоги: integratsiia/vymohy.md
-      - Служба підпису: integratsiia/sluzhba-pidpysu.md
-      - Ліцензування: integratsiia/litsenzuvannia.md
-      - Роздрібна мережа: integratsiia/rozdrib.md
-      - Імпорт та опт: integratsiia/import-opt.md
-      - Зберігання даних: integratsiia/zberigannia-danykh.md
   - Перший запуск:
       - pershyi-zapusk/index.md
       - 1. Реєстрація в еАкциз: pershyi-zapusk/reiestratsiia-eo.md
       - 2. API-токен: pershyi-zapusk/api-token.md
-      - 3. Додати ЕО: pershyi-zapusk/pomichnyk-eo.md
-      - 4. Ключ підпису: pershyi-zapusk/kliuch-pidpysu.md
   - Робота з АЕД:
       - aed/index.md
       - Прийняти вхідний АЕД: aed/pryiom-vkhidnoho-aed.md
   - Довідники:
       - dovidnyky/index.md
-      - Новий контрагент ЕО: dovidnyky/novyi-kontragent.md
-      - Доступ до об'єктів: dovidnyky/dostup-do-obiektiv.md
 
 extra_css:
   - stylesheets/extra.css
