@@ -38,6 +38,7 @@ nav:
       - Прийняти вхідний АЕД: aed/pryiom-vkhidnoho-aed.md
   - Довідники:
       - dovidnyky/index.md
+      - Користувачі ЕО та ключ ЕЦП: dovidnyky/korystuvachi-eo-kliuch.md
 
 extra_css:
   - stylesheets/extra.css
