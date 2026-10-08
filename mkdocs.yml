@@ -39,6 +39,7 @@ nav:
   - Довідники:
       - dovidnyky/index.md
       - Користувачі ЕО та ключ ЕЦП: dovidnyky/korystuvachi-eo-kliuch.md
+      - Доступ до торгових об'єктів: dovidnyky/dostup-do-obiektiv.md
 
 extra_css:
   - stylesheets/extra.css
