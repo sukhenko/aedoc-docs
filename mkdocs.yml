@@ -29,6 +29,9 @@ nav:
           - integratsiia/zberigannia/index.md
           - Тестування: integratsiia/zberigannia/testuvannia.md
           - Зовнішнє сховище MS SQL: integratsiia/zberigannia/zovnishnie-skhovyshche.md
+      - HTTP-сервіс «Сховище марок»:
+          - integratsiia/skhovyshche-marok/index.md
+          - Для розробників (API): integratsiia/skhovyshche-marok/rozrobnykam.md
   - Навчання роботи з АЕДок:
       - navchannia/index.md
       - Перший запуск:
