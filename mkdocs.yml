@@ -27,6 +27,7 @@ nav:
   - Перший запуск:
       - pershyi-zapusk/index.md
       - Реєстрація в еАкциз: pershyi-zapusk/reiestratsiia-eo.md
+      - API-токен: pershyi-zapusk/api-token.md
   - Робота з АЕД:
       - aed/index.md
       - Прийняти вхідний АЕД: aed/pryiom-vkhidnoho-aed.md
