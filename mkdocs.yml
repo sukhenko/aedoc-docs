@@ -10,6 +10,7 @@ theme:
   favicon: https://aedoc.com.ua/wp-content/uploads/2026/05/favicon-512x512-1.png
   features:
     - navigation.sections
+    - navigation.indexes
     - navigation.expand
     - navigation.top
     - navigation.footer
@@ -21,8 +22,15 @@ theme:
 
 nav:
   - Головна: index.md
-  - Отримувачу:
+  - Інтеграція:
+      - integratsiia/index.md
+  - Перший запуск:
+      - pershyi-zapusk/index.md
+  - Робота з АЕД:
+      - aed/index.md
       - Прийняти вхідний АЕД: aed/pryiom-vkhidnoho-aed.md
+  - Довідники:
+      - dovidnyky/index.md
 
 extra_css:
   - stylesheets/extra.css
