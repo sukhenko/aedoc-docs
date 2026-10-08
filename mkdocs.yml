@@ -6,6 +6,8 @@ copyright: © WebCheck — <a href="https://aedoc.com.ua">aedoc.com.ua</a>
 theme:
   name: material
   language: uk
+  logo: https://aedoc.com.ua/wp-content/uploads/2026/05/favicon-512x512-1.png
+  favicon: https://aedoc.com.ua/wp-content/uploads/2026/05/favicon-512x512-1.png
   features:
     - navigation.sections
     - navigation.expand
