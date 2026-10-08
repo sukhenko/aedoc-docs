@@ -42,3 +42,10 @@
 .md-typeset .movecard-title{font-weight:700;margin:0 0 6px}
 .md-typeset .movecard-sub{font-size:.7rem;color:#6B7280;margin:0}
 @media (max-width:600px){.md-typeset .movegrid{grid-template-columns:1fr}}
+/* Ліве меню: верхні розділи (Навчання роботи з АЕДок, Інтеграція) — як заголовки груп */
+.md-nav--primary > .md-nav__list > .md-nav__item--section{margin-top:1.4em}
+.md-nav--primary > .md-nav__list > .md-nav__item--section > .md-nav__link{
+  display:flex;color:#fff!important;background:#3D6BA0;border-left:4px solid #D9B84A;
+  border-radius:4px;padding:.45em .7em;font-weight:700;font-size:.7rem;letter-spacing:.02em;margin-bottom:.4em}
+.md-nav--primary > .md-nav__list > .md-nav__item--section > .md-nav__link *{color:#fff!important}
+.md-nav--primary > .md-nav__list > .md-nav__item--section > .md-nav__link .md-nav__icon{display:none}
