@@ -22,6 +22,22 @@ theme:
 
 nav:
   - Головна: index.md
+  - Навчання роботи з АЕДок:
+      - Перший запуск:
+          - pershyi-zapusk/index.md
+          - 1. Реєстрація в еАкциз: pershyi-zapusk/reiestratsiia-eo.md
+          - 2. API-токен: pershyi-zapusk/api-token.md
+          - 3. Помічник додавання ЕО: pershyi-zapusk/pomichnyk-eo.md
+          - 4. Підпис і доступи: pershyi-zapusk/nastupni-kroky.md
+      - Робота з АЕД:
+          - aed/index.md
+          - Прийняти вхідний АЕД: aed/pryiom-vkhidnoho-aed.md
+      - Довідники:
+          - dovidnyky/index.md
+          - Користувачі ЕО та ключ ЕЦП: dovidnyky/korystuvachi-eo-kliuch.md
+          - Контрагенти ЕО (створення, доступ):
+              - Новий контрагент ЕО: dovidnyky/dodaty-kontragenta-eo.md
+              - Торгові об'єкти та доступи: dovidnyky/dostup-do-obiektiv.md
   - Інтеграція:
       - integratsiia/index.md
       - Технічна документація: integratsiia/itdeptinfo.md
@@ -29,21 +45,6 @@ nav:
           - integratsiia/zberigannia/index.md
           - Тестування: integratsiia/zberigannia/testuvannia.md
           - Зовнішнє сховище MS SQL: integratsiia/zberigannia/zovnishnie-skhovyshche.md
-  - Перший запуск:
-      - pershyi-zapusk/index.md
-      - 1. Реєстрація в еАкциз: pershyi-zapusk/reiestratsiia-eo.md
-      - 2. API-токен: pershyi-zapusk/api-token.md
-      - 3. Помічник додавання ЕО: pershyi-zapusk/pomichnyk-eo.md
-      - 4. Підпис і доступи: pershyi-zapusk/nastupni-kroky.md
-  - Робота з АЕД:
-      - aed/index.md
-      - Прийняти вхідний АЕД: aed/pryiom-vkhidnoho-aed.md
-  - Довідники:
-      - dovidnyky/index.md
-      - Користувачі ЕО та ключ ЕЦП: dovidnyky/korystuvachi-eo-kliuch.md
-      - Контрагенти ЕО (створення, доступ):
-          - Новий контрагент ЕО: dovidnyky/dodaty-kontragenta-eo.md
-          - Торгові об'єкти та доступи: dovidnyky/dostup-do-obiektiv.md
 
 extra_css:
   - stylesheets/extra.css
