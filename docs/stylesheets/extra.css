@@ -49,3 +49,8 @@
   border-radius:4px;padding:.45em .7em;font-weight:700;font-size:.7rem;letter-spacing:.02em;margin-bottom:.4em}
 .md-nav--primary > .md-nav__list > .md-nav__item--section > .md-nav__link *{color:#fff!important}
 .md-nav--primary > .md-nav__list > .md-nav__item--section > .md-nav__link .md-nav__icon{display:none}
+
+/* На вузьких екранах дрібні скріншоти показуємо в натуральному розмірі */
+@media (max-width: 76.1875em) {
+  .md-typeset img.shot[style*="width"] { width: auto !important; max-width: 100%; }
+}
