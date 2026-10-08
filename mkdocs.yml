@@ -23,6 +23,7 @@ theme:
 nav:
   - Головна: index.md
   - Навчання роботи з АЕДок:
+      - navchannia/index.md
       - Перший запуск:
           - pershyi-zapusk/index.md
           - 1. Реєстрація в еАкциз: pershyi-zapusk/reiestratsiia-eo.md
