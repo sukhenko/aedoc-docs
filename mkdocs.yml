@@ -35,9 +35,8 @@ nav:
       - pershyi-zapusk/index.md
       - 1. Реєстрація в еАкциз: pershyi-zapusk/reiestratsiia-eo.md
       - 2. API-токен: pershyi-zapusk/api-token.md
-      - 3. Встановлення: pershyi-zapusk/vstanovlennia.md
-      - 4. Додати ЕО: pershyi-zapusk/pomichnyk-eo.md
-      - 5. Ключ підпису: pershyi-zapusk/kliuch-pidpysu.md
+      - 3. Додати ЕО: pershyi-zapusk/pomichnyk-eo.md
+      - 4. Ключ підпису: pershyi-zapusk/kliuch-pidpysu.md
   - Робота з АЕД:
       - aed/index.md
       - Прийняти вхідний АЕД: aed/pryiom-vkhidnoho-aed.md
