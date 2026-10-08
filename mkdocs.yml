@@ -24,6 +24,7 @@ nav:
   - Головна: index.md
   - Інтеграція:
       - integratsiia/index.md
+      - Технічна документація: integratsiia/itdeptinfo.md
   - Перший запуск:
       - pershyi-zapusk/index.md
       - 1. Реєстрація в еАкциз: pershyi-zapusk/reiestratsiia-eo.md

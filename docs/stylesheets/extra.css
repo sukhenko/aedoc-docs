@@ -12,3 +12,9 @@
 /* Відео YouTube 16:9 */
 .md-typeset .video{position:relative;max-width:960px;aspect-ratio:16/9;margin:0 0 1.2em}
 .md-typeset .video iframe{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:6px}
+/* Схеми SVG */
+.md-typeset img.schema{width:100%;background:#fff;padding:16px;border-radius:8px}
+.md-typeset img.schema--narrow{max-width:680px}
+/* Примітка без заголовка — жовта смуга, як на aedoc.com.ua */
+.md-typeset .admonition.note{border-color:#D9B84A}
+.md-typeset .admonition.note>.admonition-title:empty{display:none}
