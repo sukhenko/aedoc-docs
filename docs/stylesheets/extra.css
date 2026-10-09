@@ -138,3 +138,25 @@
 .md-typeset .cta__title{font-size:1.1rem;font-weight:700;color:#fff!important}
 @media (max-width:600px){.md-typeset .ways{grid-template-columns:1fr}}
 @media (min-width:1220px){.md-typeset .wf{grid-template-columns:repeat(5,1fr)}}
+
+/* ===== Кнопки завантаження ===== */
+.md-typeset .dl{display:flex;flex-wrap:wrap;gap:12px;margin:1.4em 0;position:relative;z-index:1}
+.md-typeset .dl__btn{display:flex;align-items:center;gap:12px;padding:12px 18px;border-radius:10px;text-decoration:none!important;font-size:.74rem;line-height:1.25;transition:transform .1s,box-shadow .15s,background .15s;min-width:240px;flex:1 1 240px;max-width:340px}
+.md-typeset .dl__btn:hover{transform:translateY(-1px)}
+.md-typeset .dl__btn b{display:block;font-weight:700}
+.md-typeset .dl__btn small{display:block;font-size:.62rem;opacity:.8;margin-top:2px}
+.md-typeset .dl__ico{font-size:1.1rem;width:34px;height:34px;flex:0 0 34px;border-radius:8px;display:flex;align-items:center;justify-content:center}
+/* у банері головної */
+.md-typeset .dl--hero .dl__btn{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.35);color:#fff!important}
+.md-typeset .dl--hero .dl__btn:hover{background:rgba(255,255,255,.2)}
+.md-typeset .dl--hero .dl__ico{background:rgba(255,255,255,.18)}
+.md-typeset .dl--hero .dl__btn--gold{background:#D9B84A;border-color:#D9B84A;color:#1A1A1A!important}
+.md-typeset .dl--hero .dl__btn--gold:hover{background:#E6C866}
+.md-typeset .dl--hero .dl__btn--gold .dl__ico{background:rgba(0,0,0,.08)}
+/* на сторінці */
+.md-typeset .dl--page .dl__btn{background:#fff;border:1px solid #E5E7EB;color:#1A1A1A!important;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.md-typeset .dl--page .dl__btn:hover{box-shadow:0 3px 12px rgba(0,0,0,.12);border-color:#3D6BA0}
+.md-typeset .dl--page .dl__ico{background:#e8f0f9;color:#3D6BA0}
+.md-typeset .dl--page .dl__btn--gold{background:#D9B84A;border-color:#D9B84A}
+.md-typeset .dl--page .dl__btn--gold .dl__ico{background:rgba(0,0,0,.08);color:#1A1A1A}
+@media (max-width:600px){.md-typeset .dl__btn{max-width:none}}
