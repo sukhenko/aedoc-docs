@@ -98,3 +98,11 @@
   .md-typeset .tabbed-set>input:nth-child(3):checked~.tabbed-labels>:nth-child(3),
   .md-typeset .tabbed-set>input:nth-child(4):checked~.tabbed-labels>:nth-child(4){color:#3D6BA0;box-shadow:inset 0 -2px 0 #D9B84A}
 }
+.md-typeset .hero__steps{position:relative;z-index:1;list-style:none;counter-reset:hs;margin:1.6em 0 0!important;padding:0;display:grid;gap:12px;max-width:900px}
+.md-typeset .hero__steps>li{counter-increment:hs;position:relative;margin:0!important;padding:12px 16px 12px 58px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:10px;font-size:.78rem;line-height:1.5}
+.md-typeset .hero__steps>li::before{content:counter(hs);position:absolute;left:14px;top:11px;width:30px;height:30px;border-radius:50%;background:#D9B84A;color:#1A1A1A;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:.8rem}
+.md-typeset .hero__steps a{color:#fff;text-decoration:underline;text-decoration-color:rgba(255,255,255,.45);text-underline-offset:3px}
+.md-typeset .hero__steps a:hover{color:#F1D98A;text-decoration-color:#F1D98A}
+.md-typeset .hero__links{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.md-typeset .hero__links a{text-decoration:none;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);border-radius:6px;padding:4px 10px;font-size:.72rem}
+.md-typeset .hero__links a:hover{background:rgba(217,184,74,.25);border-color:#D9B84A;color:#fff}

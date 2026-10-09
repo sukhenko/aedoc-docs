@@ -13,10 +13,17 @@ hide:
 
 <p class="hero__lead">Тут зібрано все для впровадження і щоденної роботи: технічні вимоги, інструкції з реальних тестів, відео та довідники.</p>
 
-<div class="hero__actions">
-<a class="hero__btn hero__btn--primary" href="#start">З чого почати</a>
-<a class="hero__btn" href="testuvannia/rozdrib-prro/">Подивитися відео (5 хв)</a>
-</div>
+<ol class="hero__steps">
+<li><a href="integratsiia/"><strong>Інтегруйте / встановіть підсистему AEDOC</strong></a> — передайте інформацію з інтеграції спеціалісту з вашої облікової системи (програмісту).</li>
+<li><a href="pershyi-zapusk/"><strong>Перший запуск і додавання ЕО</strong></a> — реєстрація в еАкциз, API-токен, <a href="pershyi-zapusk/pomichnyk-eo/">помічник додавання ЕО</a>.</li>
+<li><strong>Пройдіть навчання</strong> роботи з типовими механізмами <a href="dovidnyky/korystuvachi-eo-kliuch/">підпису</a> і АЕД:
+<span class="hero__links">
+<a href="aed/pryiom-vkhidnoho-aed/">Прийняти вхідний АЕД</a>
+<a href="aed/vidkhylennia-aed1/">Відмовитися від АЕД</a>
+<a href="aed/aed4-povernennia/">Повернути АЕД</a>
+<a href="dovidnyky/dostup-do-obiektiv/">Надати контрагенту доступ до ваших об'єктів для обміну АЕД</a>
+</span></li>
+</ol>
 
 </div>
 
