@@ -174,3 +174,6 @@
 .md-banner a.dlbar__btn--gold:hover{background:#E6C866;color:#1A1A1A}
 .dlbar__btn small{font-weight:400;opacity:.8;font-size:.6rem}
 @media (max-width:600px){.dlbar__btn small{display:none}}
+.md-banner a.dlbar__btn--tg{margin-left:auto;background:#229ED9;border-color:#229ED9;align-items:center}
+.md-banner a.dlbar__btn--tg:hover{background:#1c8bc0;color:#fff}
+@media (max-width:600px){.md-banner a.dlbar__btn--tg{margin-left:0}}
