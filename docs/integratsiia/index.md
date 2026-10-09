@@ -6,7 +6,7 @@
 - [Варіанти інтеграції підсистеми](varianty.md) — standalone-конфігурація або інтеграція у вашу систему BAS: що обрати
 - [Технічна документація для ІТ-фахівців](itdeptinfo.md)
 - [Зберігання даних підсистеми AEDOC](zberigannia/index.md)
-    - [Тестування росту бази даних](zberigannia/testuvannia.md)
+    - [Емуляція навантаження 1000 документів АЕД](zberigannia/testuvannia.md)
     - [Зовнішнє сховище MS SQL Server](zberigannia/zovnishnie-skhovyshche.md)
 - [HTTP-сервіс «Сховище марок» для ПРРО](skhovyshche-marok/index.md) — актуальні статуси акцизних марок для ПРРО і РРО
     - [Для розробників: API для касового ПЗ](skhovyshche-marok/rozrobnykam.md)

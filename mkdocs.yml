@@ -30,7 +30,7 @@ nav:
       - Технічна документація: integratsiia/itdeptinfo.md
       - Зберігання даних:
           - integratsiia/zberigannia/index.md
-          - Тестування: integratsiia/zberigannia/testuvannia.md
+          - Емуляція навантаження 1000 документів АЕД: integratsiia/zberigannia/testuvannia.md
           - Зовнішнє сховище MS SQL: integratsiia/zberigannia/zovnishnie-skhovyshche.md
       - HTTP-сервіс «Сховище марок» для ПРРО:
           - integratsiia/skhovyshche-marok/index.md
