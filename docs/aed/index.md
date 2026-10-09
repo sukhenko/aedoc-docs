@@ -6,4 +6,4 @@
     - [Прийняти вхідний АЕД №1](pryiom-vkhidnoho-aed.md)
     - [Відхилити вхідний АЕД №1](vidkhylennia-aed1.md)
 - АЕД №4
-    - [Повернути товар на підставі АЕД №1](aed4-povernennia.md)
+    - [Повернути акцизні марки на підставі АЕД №1](aed4-povernennia.md)
