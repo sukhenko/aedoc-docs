@@ -53,6 +53,9 @@ nav:
           - Контрагенти ЕО (створення, доступ):
               - Новий контрагент ЕО: dovidnyky/dodaty-kontragenta-eo.md
               - Торгові об'єкти та доступи: dovidnyky/dostup-do-obiektiv.md
+  - Тестування:
+      - testuvannia/index.md
+      - Роздріб ред.1 + ПРРО: testuvannia/rozdrib-prro.md
 
 extra_css:
   - stylesheets/extra.css
@@ -62,6 +65,8 @@ extra_javascript:
 markdown_extensions:
   - attr_list
   - admonition
+  - pymdownx.details
+  - pymdownx.superfences
   - md_in_html
   - tables
   - toc:
