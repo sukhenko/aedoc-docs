@@ -5,6 +5,7 @@ copyright: © WebCheck — <a href="https://aedoc.com.ua">aedoc.com.ua</a>
 
 theme:
   name: material
+  custom_dir: overrides
   language: uk
   logo: https://aedoc.com.ua/wp-content/uploads/2026/05/favicon-512x512-1.png
   favicon: https://aedoc.com.ua/wp-content/uploads/2026/05/favicon-512x512-1.png
@@ -59,9 +60,9 @@ nav:
       - Роздріб ред.1 + ПРРО: testuvannia/rozdrib-prro.md
 
 extra_css:
-  - stylesheets/extra.css?v=20261009-4
+  - stylesheets/extra.css?v=20261009-5
 extra_javascript:
-  - javascripts/lightbox.js?v=20261009-4
+  - javascripts/lightbox.js?v=20261009-5
 
 markdown_extensions:
   - attr_list
@@ -77,3 +78,13 @@ markdown_extensions:
       slugify: !!python/object/apply:pymdownx.slugs.slugify
         kwds:
           case: lower
+
+# Поточна версія AEDOC і посилання на завантаження — показуються у верхній смузі на всіх сторінках.
+# При виході нової версії змініть version і date.
+extra:
+  aedoc:
+    version: 1.0.1.7
+    date: 01.10.2026
+    config_url: "https://aedoc.com.ua/download/%d0%ba%d0%be%d0%bd%d1%84%d1%96%d0%b3%d1%83%d1%80%d0%b0%d1%86%d1%96%d1%8f-%d0%b4%d0%bb%d1%8f-%d1%96%d0%bd%d1%82%d0%b5%d0%b3%d1%80%d1%86%d1%96%d1%97-%d0%b0%d0%b5%d0%b4%d0%be%d1%81-%d0%b5%d0%b0%d0%ba/?wpdmdl=1100&masterkey=O9dcV8_ycmVqIXQktj0R3wCUZCvq4lylBo8OMxiQx9OZ8MXji0Jw51zc-ZujyD3AiFu3OYeX-0RPAWOekI4xLl3nt6g2-02p7RyS-Dg4yaAQ"
+    extension_url: "https://aedoc.com.ua/download/%d1%80%d0%be%d0%b7%d1%88%d0%b8%d1%80%d0%b5%d0%bd%d0%bd%d1%8f-%d0%b0%d0%b5%d0%b4%d0%be%d0%ba-%d0%b4%d0%bb%d1%8f-%d1%96%d0%bd%d1%82%d0%b5%d0%b3%d1%80%d0%b0%d1%86%d1%96%d1%97-bas-%d0%bc%d0%b0%d0%bb%d0%b8/?wpdmdl=961&masterkey=OcfrThd5vLXuNNHUTBwEwV78gnSI2OGMMOViLd_7AeNiCmjAjv9N9ojm0AmCJY_pDjQA0hE6DZtF46YpioVLUur6G0LQWgZCSQjkqyYMdOmA"
+    sign_url: "https://aedoc.com.ua/download/%d0%bc%d0%be%d0%b4%d1%83%d0%bb%d1%8c-%d0%bf%d1%96%d0%b4%d0%bf%d0%b8%d1%81%d1%83-%d0%b5%d0%b0%d0%ba%d1%86%d0%b8%d0%b7/"
