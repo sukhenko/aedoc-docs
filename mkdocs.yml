@@ -58,9 +58,9 @@ nav:
       - Роздріб ред.1 + ПРРО: testuvannia/rozdrib-prro.md
 
 extra_css:
-  - stylesheets/extra.css
+  - stylesheets/extra.css?v=20261009-2
 extra_javascript:
-  - javascripts/lightbox.js
+  - javascripts/lightbox.js?v=20261009-2
 
 markdown_extensions:
   - attr_list
