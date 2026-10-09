@@ -54,3 +54,8 @@
 @media (max-width: 76.1875em) {
   .md-typeset img.shot[style*="width"] { width: auto !important; max-width: 100%; }
 }
+
+/* Довга назва сайту вже є в шапці — не дублюємо її над меню на десктопі */
+@media (min-width: 76.25em) {
+  .md-nav--primary > .md-nav__title { display: none; }
+}
