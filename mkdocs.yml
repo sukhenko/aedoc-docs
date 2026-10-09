@@ -50,6 +50,8 @@ nav:
               - Відхилити вхідний АЕД №1: aed/vidkhylennia-aed1.md
           - АЕД №4:
               - Повернути акцизні марки на підставі АЕД №1: aed/aed4-povernennia.md
+          - АЕД №7:
+              - Перемістити акцизні марки між торговими об'єктами: aed/aed7-peremishchennia.md
       - Довідники:
           - dovidnyky/index.md
           - Користувачі ЕО та ключ ЕЦП: dovidnyky/korystuvachi-eo-kliuch.md
