@@ -32,6 +32,7 @@ nav:
       - HTTP-сервіс «Сховище марок»:
           - integratsiia/skhovyshche-marok/index.md
           - Для розробників (API): integratsiia/skhovyshche-marok/rozrobnykam.md
+      - Тестування (Sandbox): integratsiia/sandbox.md
   - Навчання роботи з АЕДок:
       - navchannia/index.md
       - Перший запуск:
@@ -58,9 +59,9 @@ nav:
       - Роздріб ред.1 + ПРРО: testuvannia/rozdrib-prro.md
 
 extra_css:
-  - stylesheets/extra.css?v=20261009-2
+  - stylesheets/extra.css?v=20261009-3
 extra_javascript:
-  - javascripts/lightbox.js?v=20261009-2
+  - javascripts/lightbox.js?v=20261009-3
 
 markdown_extensions:
   - attr_list
@@ -73,3 +74,6 @@ markdown_extensions:
   - tables
   - toc:
       permalink: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
