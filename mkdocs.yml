@@ -45,12 +45,12 @@ nav:
           - 4. Підпис і доступи: pershyi-zapusk/nastupni-kroky.md
       - Робота з АЕД:
           - aed/index.md
-          - АЕД №1:
+          - АЕД №1 (Відвантаження):
               - Прийняти вхідний АЕД №1: aed/pryiom-vkhidnoho-aed.md
               - Відхилити вхідний АЕД №1: aed/vidkhylennia-aed1.md
-          - АЕД №4:
+          - АЕД №4 (Повернення):
               - Повернути акцизні марки на підставі АЕД №1: aed/aed4-povernennia.md
-          - АЕД №7:
+          - АЕД №7 (Переміщення):
               - Перемістити акцизні марки між торговими об'єктами: aed/aed7-peremishchennia.md
       - Довідники:
           - dovidnyky/index.md
