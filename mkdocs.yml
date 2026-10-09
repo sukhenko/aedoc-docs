@@ -26,6 +26,7 @@ nav:
   - Інтеграція:
       - integratsiia/index.md
       - Тестування (Sandbox): integratsiia/sandbox.md
+      - Варіанти інтеграції: integratsiia/varianty.md
       - Технічна документація: integratsiia/itdeptinfo.md
       - Зберігання даних:
           - integratsiia/zberigannia/index.md

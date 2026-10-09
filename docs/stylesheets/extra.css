@@ -184,3 +184,5 @@
 .md-typeset .home-video__text p:first-child{font-size:.85rem;margin-top:0}
 .md-typeset .home-video__text ol li{margin-bottom:.4em}
 @media (max-width:960px){.md-typeset .home-video{grid-template-columns:1fr}}
+.md-typeset .way h3{margin-top:0}
+.md-typeset .way ul li{margin-bottom:.4em}
