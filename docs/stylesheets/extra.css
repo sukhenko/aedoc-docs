@@ -50,14 +50,13 @@
 .md-nav--primary > .md-nav__list > .md-nav__item--section > .md-nav__link *{color:#fff!important}
 .md-nav--primary > .md-nav__list > .md-nav__item--section > .md-nav__link .md-nav__icon{display:none}
 
-/* Ліве меню (десктоп): підрозділи другого рівня (Перший запуск, Робота з АЕД, Довідники…) — жирний капс з лінією */
+/* Ліве меню (десктоп): підрозділи другого рівня (Перший запуск, Робота з АЕД, Довідники…) — бежева плашка із золотою смугою */
 @media (min-width:76.25em){
-  .md-nav--primary > .md-nav__list > .md-nav__item--section > .md-nav > .md-nav__list > .md-nav__item--nested{margin-top:.9em}
+  .md-nav--primary > .md-nav__list > .md-nav__item--section > .md-nav > .md-nav__list > .md-nav__item--nested{margin-top:.8em}
   .md-nav--primary > .md-nav__list > .md-nav__item--section > .md-nav > .md-nav__list > .md-nav__item--nested > .md-nav__link{
-    border-bottom:1px solid #C9D6E6;padding-bottom:.25em;margin-bottom:.3em}
+    background:#FFF6DA;border-left:4px solid #D9B84A;border-radius:4px;padding:.3em .5em;margin-bottom:.3em}
   .md-nav--primary > .md-nav__list > .md-nav__item--section > .md-nav > .md-nav__list > .md-nav__item--nested > .md-nav__link,
-  .md-nav--primary > .md-nav__list > .md-nav__item--section > .md-nav > .md-nav__list > .md-nav__item--nested > .md-nav__link a{
-    color:#2E5583;font-weight:700;text-transform:uppercase;letter-spacing:.03em;font-size:.62rem}
+  .md-nav--primary > .md-nav__list > .md-nav__item--section > .md-nav > .md-nav__list > .md-nav__item--nested > .md-nav__link a{color:#2E5583;font-weight:700}
   .md-nav--primary > .md-nav__list > .md-nav__item--section > .md-nav > .md-nav__list > .md-nav__item--nested > .md-nav__link a:hover{color:#3D6BA0}
 }
 
