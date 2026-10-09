@@ -96,7 +96,7 @@ hide:
 
     1. [Технічна документація](integratsiia/itdeptinfo.md): вимоги до платформи, служба підпису, ліцензування, інтеграція з об'єктами вашої конфігурації і введення на підставі
     2. [Зберігання даних](integratsiia/zberigannia/index.md): приріст бази і зовнішнє сховище MS SQL
-    3. [HTTP-сервіс «Сховище марок»](integratsiia/skhovyshche-marok/index.md) і [API для касового ПЗ](integratsiia/skhovyshche-marok/rozrobnykam.md)
+    3. [HTTP-сервіс «Сховище марок» для ПРРО](integratsiia/skhovyshche-marok/index.md) і [API для касового ПЗ](integratsiia/skhovyshche-marok/rozrobnykam.md)
     4. Розгорніть standalone-конфігурацію для тестів і пройдіть [повний цикл з відео](testuvannia/index.md)
 
 === "Аналітик"
