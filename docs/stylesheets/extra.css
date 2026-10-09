@@ -177,3 +177,10 @@
 .md-banner a.dlbar__btn--tg{margin-left:auto;background:#229ED9;border-color:#229ED9;align-items:center}
 .md-banner a.dlbar__btn--tg:hover{background:#1c8bc0;color:#fff}
 @media (max-width:600px){.md-banner a.dlbar__btn--tg{margin-left:0}}
+
+/* ===== Відео на головній ===== */
+.md-typeset .home-video{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:28px;align-items:center;margin:1em 0 2.2em}
+.md-typeset .home-video .video{margin:0}
+.md-typeset .home-video__text p:first-child{font-size:.85rem;margin-top:0}
+.md-typeset .home-video__text ol li{margin-bottom:.4em}
+@media (max-width:960px){.md-typeset .home-video{grid-template-columns:1fr}}
