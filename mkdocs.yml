@@ -62,6 +62,8 @@ nav:
           - zvity/index.md
           - Залишки:
               - Запит залишків акцизних марок по ЕО: zvity/zapyt-zalyshkiv.md
+          - Рух марки:
+              - Рух акцизної марки в еАкциз: zvity/rukh-marky.md
   - Тестування:
       - testuvannia/index.md
       - Роздріб ред.1 + ПРРО: testuvannia/rozdrib-prro.md
