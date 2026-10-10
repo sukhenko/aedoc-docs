@@ -27,6 +27,7 @@ nav:
       - integratsiia/index.md
       - Тестування (Sandbox): integratsiia/sandbox.md
       - Варіанти інтеграції: integratsiia/varianty.md
+      - Типові схеми руху підакцизних товарів: integratsiia/typovi-skhemy.md
       - Технічна документація: integratsiia/itdeptinfo.md
       - Зберігання даних:
           - integratsiia/zberigannia/index.md
@@ -69,9 +70,9 @@ nav:
       - Роздріб ред.1 + ПРРО: testuvannia/rozdrib-prro.md
 
 extra_css:
-  - stylesheets/extra.css?v=20261010-2
+  - stylesheets/extra.css?v=20261010-3
 extra_javascript:
-  - javascripts/lightbox.js?v=20261010-2
+  - javascripts/lightbox.js?v=20261010-3
 
 markdown_extensions:
   - attr_list

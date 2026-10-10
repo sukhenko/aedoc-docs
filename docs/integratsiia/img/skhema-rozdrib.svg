@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1140" height="600" viewBox="0 0 1140 600" font-family="Inter, Montserrat, Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6B7280"/>
+    </marker>
+    <marker id="ah-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#3D6BA0"/>
+    </marker>
+    <filter id="sh" x="-5%" y="-5%" width="110%" height="120%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-color="#1A1A1A" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" fill="#fafbfc"/>
+<g transform="translate(180,0)">
+  <!-- ===== connectors ===== -->
+  <!-- Каса <-> ERP : статус марки -->
+  <line x1="272" y1="120" x2="608" y2="120" stroke="#6B7280" stroke-width="1.6" marker-start="url(#ah)" marker-end="url(#ah)"/>
+  <rect x="330" y="98" width="220" height="30" rx="4" fill="#fafbfc"/>
+  <text x="440" y="112" text-anchor="middle" font-size="13" fill="#1A1A1A">Запит статусу акцизної марки</text>
+  <rect x="320" y="126" width="240" height="22" rx="4" fill="#fafbfc"/>
+  <text x="440" y="141" text-anchor="middle" font-size="12" fill="#6B7280">HTTP-сервіс · обмін залишками марок</text>
+  <!-- ERP <-> ТСД : протокол сканування -->
+  <line x1="272" y1="220" x2="410" y2="266" stroke="#6B7280" stroke-width="1.6" marker-start="url(#ah)" marker-end="url(#ah)"/>
+  <rect x="256" y="242" width="140" height="30" rx="4" fill="#fafbfc"/>
+  <text x="326" y="262" text-anchor="middle" font-size="13" fill="#1A1A1A">Протокол сканування</text>
+  <!-- Каса -> ТСД -->
+  <line x1="608" y1="200" x2="550" y2="266" stroke="#6B7280" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#ah)"/>
+  <rect x="560" y="236" width="80" height="24" rx="4" fill="#fafbfc"/>
+  <text x="600" y="253" text-anchor="middle" font-size="12" fill="#6B7280">сканування</text>
+  <!-- Каса -> ЦОД РРО : чек ПРРО -->
+  <line x1="760" y1="180" x2="760" y2="420" stroke="#6B7280" stroke-width="1.6" marker-end="url(#ah)"/>
+  <rect x="772" y="285" width="90" height="30" rx="4" fill="#fafbfc"/>
+  <text x="817" y="305" text-anchor="middle" font-size="13" fill="#1A1A1A">Чек ПРРО</text>
+  <!-- ЦОД РРО -> еАкциз : акцизні марки -->
+  <line x1="666" y1="480" x2="514" y2="480" stroke="#6B7280" stroke-width="1.6" marker-end="url(#ah)"/>
+  <rect x="530" y="452" width="120" height="26" rx="4" fill="#fafbfc"/>
+  <text x="590" y="470" text-anchor="middle" font-size="13" fill="#1A1A1A">Акцизні марки</text>
+  <!-- ERP <-> еАкциз : АЕД / API Excise (главная связь, синяя) -->
+  <line x1="180" y1="220" x2="352" y2="420" stroke="#3D6BA0" stroke-width="2.2" marker-start="url(#ah-blue)" marker-end="url(#ah-blue)"/>
+  <rect x="110" y="290" width="150" height="52" rx="4" fill="#fafbfc"/>
+  <text x="185" y="310" text-anchor="middle" font-size="14" font-weight="700" fill="#3D6BA0">АЕД</text>
+  <text x="185" y="330" text-anchor="middle" font-size="12" fill="#6B7280">API Excise · КЕП</text>
+  <!-- ===== nodes ===== -->
+  <!-- ERP -->
+  <g filter="url(#sh)">
+    <rect x="80" y="60" width="192" height="160" rx="6" fill="#fff" stroke="#E5E7EB"/>
+    <rect x="80" y="60" width="4" height="160" fill="#3D6BA0"/>
+  </g>
+  <text x="104" y="96" font-size="20" font-weight="700" fill="#1A1A1A">ERP</text>
+  <text x="104" y="118" font-size="13" fill="#6B7280">Облікова система</text>
+  <text x="104" y="136" font-size="13" fill="#6B7280">з інтегрованою</text>
+  <text x="104" y="154" font-size="13" fill="#6B7280">підсистемою AEDOC</text>
+    <text x="104" y="182" font-size="12" font-weight="600" fill="#3D6BA0">УТП · УТ · КУП · Мал. Бізнес</text>
+  <text x="104" y="202" font-size="12" fill="#6B7280">Керовані та звичайні форми</text>
+  <!-- Каса -->
+  <g filter="url(#sh)">
+    <rect x="608" y="60" width="192" height="120" rx="6" fill="#fff" stroke="#E5E7EB"/>
+    <rect x="608" y="60" width="4" height="120" fill="#83B735"/>
+  </g>
+  <text x="632" y="96" font-size="20" font-weight="700" fill="#1A1A1A">Каса</text>
+  <text x="632" y="118" font-size="13" fill="#6B7280">Робоче місце касира</text>
+  <text x="632" y="136" font-size="13" fill="#6B7280">ПРРО</text>
+  <!-- ТСД -->
+  <g filter="url(#sh)">
+    <rect x="410" y="266" width="140" height="96" rx="6" fill="#fff" stroke="#E5E7EB"/>
+    <rect x="410" y="266" width="4" height="96" fill="#6B7280"/>
+  </g>
+  <text x="430" y="290" font-size="16" font-weight="700" fill="#1A1A1A">ТСД</text>
+  <text x="430" y="310" font-size="12" fill="#6B7280">Приймання товару</text>
+  <text x="430" y="328" font-size="12" fill="#6B7280">в магазині</text>
+  <text x="430" y="346" font-size="12" fill="#6B7280">та на складі</text>
+  <!-- еАкциз -->
+  <g filter="url(#sh)">
+    <rect x="322" y="420" width="192" height="120" rx="6" fill="#fff" stroke="#E5E7EB"/>
+    <rect x="322" y="420" width="4" height="120" fill="#D9B84A"/>
+  </g>
+  <text x="346" y="456" font-size="20" font-weight="700" fill="#1A1A1A">еАкциз</text>
+  <text x="346" y="478" font-size="13" fill="#6B7280">Електронна система</text>
+  <text x="346" y="496" font-size="13" fill="#6B7280">обігу акцизних марок</text>
+  <text x="346" y="524" font-size="12" fill="#6B7280">xtrace.gov.ua</text>
+  <!-- ЦОД РРО -->
+  <g filter="url(#sh)">
+    <rect x="666" y="420" width="192" height="120" rx="6" fill="#fff" stroke="#E5E7EB"/>
+    <rect x="666" y="420" width="4" height="120" fill="#1A1A1A"/>
+  </g>
+  <text x="690" y="456" font-size="20" font-weight="700" fill="#1A1A1A">ЦОД РРО</text>
+  <text x="690" y="478" font-size="13" fill="#6B7280">Сервер фіскалізації</text>
+  <text x="690" y="496" font-size="13" fill="#6B7280">ДПС України</text>
+</g>
+  <!-- Функції підсистеми -->
+  <line x1="200" y1="140" x2="258" y2="140" stroke="#3D6BA0" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <g filter="url(#sh)">
+    <rect x="40" y="60" width="160" height="160" rx="6" fill="#fff" stroke="#E5E7EB"/>
+    <rect x="40" y="60" width="4" height="160" fill="#3D6BA0"/>
+  </g>
+  <text x="62" y="90" font-size="13" font-weight="700" fill="#1A1A1A">Функції підсистеми</text>
+  <text x="62" y="116" font-size="12" fill="#6B7280">Підпис АЕД</text>
+  <text x="62" y="136" font-size="12" fill="#6B7280">Звіти еАкциз</text>
+  <text x="62" y="156" font-size="12" fill="#6B7280">ПпН</text>
+  <text x="62" y="176" font-size="12" fill="#6B7280">Переміщення марок</text>
+  <text x="62" y="196" font-size="12" fill="#6B7280">Відвантаження</text>
+</svg>

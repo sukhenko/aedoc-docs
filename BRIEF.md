@@ -52,6 +52,7 @@ BRIEF.md                 цей файл (не публікується)
 Інтеграція
   ├─ Тестування (Sandbox)                       integratsiia/sandbox.md
   ├─ Варіанти інтеграції                        integratsiia/varianty.md
+  ├─ Типові схеми руху підакцизних товарів      integratsiia/typovi-skhemy.md
   ├─ Технічна документація                      integratsiia/itdeptinfo.md
   ├─ Зберігання даних
   │    ├─ Емуляція навантаження 1000 документів АЕД
@@ -180,6 +181,8 @@ BRIEF.md                 цей файл (не публікується)
 | `.creds` | блок з логіном/паролем/URL |
 | `.cta` | синій блок-заклик з кнопкою |
 | `.form-pill--managed/--ordinary` | мітки «Керовані / Звичайні форми» |
+| `.flow` + `.flow__step.flow--aed/invoice/transfer/prro/return/ppn/canceled`, `.flow__tag`, `.flow__title`, `.flow-nav`, `.flow-label` | сценарії руху: кроки-таймлайн з кольором за типом документа (Типові схеми) |
+| `.wf--4` | `.wf` у 4 колонки |
 
 - HTML-блок з Markdown усередині — атрибут `markdown` на **кожному** вкладеному `<div>` (`<div class="ways" markdown>`).
 - **Після зміни CSS/JS** збільшити версію в `mkdocs.yml`: `extra.css?v=…` і `lightbox.js?v=…` — інакше браузери беруть старі стилі.
