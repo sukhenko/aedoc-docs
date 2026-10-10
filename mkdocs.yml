@@ -58,6 +58,10 @@ nav:
           - Контрагенти ЕО (створення, доступ):
               - Новий контрагент ЕО: dovidnyky/dodaty-kontragenta-eo.md
               - Торгові об'єкти та доступи: dovidnyky/dostup-do-obiektiv.md
+      - Звіти:
+          - zvity/index.md
+          - Залишки:
+              - Запит залишків акцизних марок по ЕО: zvity/zapyt-zalyshkiv.md
   - Тестування:
       - testuvannia/index.md
       - Роздріб ред.1 + ПРРО: testuvannia/rozdrib-prro.md
