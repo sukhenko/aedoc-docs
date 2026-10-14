@@ -26,14 +26,13 @@ docs/stylesheets/extra.css   усі стилі
 docs/javascripts/lightbox.js клік по скріну → на весь екран
 docs/<розділ>/img/       скріншоти і схеми розділу
 tools/annotate.py        обробка скріншотів (рамки, номери, розмиття)
-tools/build_kb.py        збирає базу знань для ІІ: docs/ + kb/ → aedoc-kb.md (python tools/build_kb.py)
+tools/build_kb.py        збирає базу знань для ІІ: docs/ + kb/ + ../aedoc-kb → aedoc-kb.md (python tools/build_kb.py)
 kb/faq/                  питання-відповіді для ІІ (не публікуються на сайті, але видно на GitHub)
 kb/faq/_shablon.md       шаблон запису; файли з "_" у базу не потрапляють
-kb/internal/             внутрішнє (баги, обходи) — у .gitignore, лише локально
 BRIEF.md                 цей файл (не публікується)
 ```
 
-База знань для ІІ: репозиторій публічний, тому в `kb/faq/` — лише знеособлені питання-відповіді (без імен, ЄДРПОУ, телефонів клієнтів). Внутрішнє — у `kb/internal/`. Згенерований `aedoc-kb.md` теж у `.gitignore`, бо містить `kb/internal/`.
+База знань для ІІ: репозиторій публічний, тому в `kb/faq/` — лише знеособлені питання-відповіді (без імен, ЄДРПОУ, телефонів клієнтів). Закрите (відомі помилки, обходи, внутрішнє) — у приватному репозиторії `github.com/sukhenko/aedoc-kb`; склонуйте його поруч (`../aedoc-kb`), і `build_kb.py` додасть його розділом 3. Згенерований `aedoc-kb.md` у `.gitignore`, бо містить закрите.
 
 Локальна перевірка: `pip install -r requirements.txt && mkdocs build` (без WARNING/ERROR), перегляд — `mkdocs serve`.
 

@@ -4,15 +4,19 @@
     python tools/build_kb.py <repo> <out.md>
 
 Частина 1 — статті сайту з docs/ (у порядку меню mkdocs.yml, з посиланнями на dovidka).
-Частина 2 — внутрішні матеріали з kb/ (не публікуються на сайті).
+Частина 2 — питання-відповіді з kb/ цього репозиторію (публічний репозиторій, на сайті не показуються).
+Частина 3 — закрите з приватного репозиторію aedoc-kb.
+    Шукається поруч: ../aedoc-kb, або шлях у змінній середовища AEDOC_KB_PRIVATE.
+    Немає — збирається без нього.
 """
-import re, sys, html, posixpath, datetime
+import os, re, sys, html, posixpath, datetime
 from urllib.parse import urljoin
 from pathlib import Path
 
 ROOT = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(__file__).resolve().parent.parent
 OUT = Path(sys.argv[2]) if len(sys.argv) > 2 else ROOT / "aedoc-kb.md"
 DOCS, KB = ROOT / "docs", ROOT / "kb"
+PRIVATE = Path(os.environ.get("AEDOC_KB_PRIVATE") or ROOT.parent / "aedoc-kb")
 SITE = "https://dovidka.aedoc.com.ua/"
 
 
@@ -95,35 +99,46 @@ for rel in order:
     title, _, rest = body.partition("\n")
     site_parts.append(f"{title}\n\nДжерело: {url_of(rel)}\n{rest}")
 
-# ---------- частина 2: kb/ ----------
-kb_parts = []
-if KB.exists():
-    for path in sorted(KB.rglob("*.md")):
-        rel = str(path.relative_to(ROOT)).replace("\\", "/")
-        if path.name.startswith("_"):  # шаблони і чернетки
-            continue
+# ---------- частини 2 і 3: kb/ і приватний aedoc-kb ----------
+def collect(folder, label):
+    parts = []
+    if not folder.exists():
+        return parts
+    for path in sorted(folder.rglob("*.md")):
+        rel = str(path.relative_to(folder)).replace("\\", "/")
+        if path.name.startswith("_") or path.name.lower() == "readme.md" or rel.startswith("."):
+            continue  # шаблони, чернетки, README
         meta, src = front_matter(path.read_text(encoding="utf-8"))
         body = convert(src)
         title = meta.get("тема") or path.stem
         info = " · ".join(f"{k}: {v}" for k, v in meta.items() if k != "тема")
-        head = f"# {title}\n\nДжерело: внутрішнє ({rel}), посилання клієнту не давати"
+        head = f"# {title}\n\nДжерело: {label} ({rel}), посилання клієнту не давати"
         if info:
             head += f"\n{info}"
-        kb_parts.append(f"{head}\n\n{body}")
+        parts.append(f"{head}\n\n{body}")
+    return parts
+
+kb_parts = collect(KB, "kb")
+private_parts = collect(PRIVATE, "закрите, aedoc-kb")
 
 today = datetime.date.today().strftime("%d.%m.%Y")
 out = [
     "# База знань AEDOC\n\n"
-    f"Зібрано {today}. Статей сайту: {len(site_parts)}, внутрішніх матеріалів: {len(kb_parts)}.\n"
+    f"Зібрано {today}. Статей сайту: {len(site_parts)}, питань-відповідей: {len(kb_parts)}, "
+    f"закритих матеріалів: {len(private_parts)}.\n"
     "Кожен матеріал починається із заголовка `# ` і рядка `Джерело:`.\n"
     "Для статей сайту `Джерело` — адреса сторінки, її можна давати клієнту.\n"
-    "Внутрішні матеріали (розділ 2) не публікуються: посилань на них клієнту не давати.\n"
+    "Розділи 2 і 3 на сайті не опубліковані: посилань на них клієнту не давати.\n"
     "Скриншоти замінено їхнім описом у форматі [Скриншот: …].",
     "# РОЗДІЛ 1. Статті довідки dovidka.aedoc.com.ua",
     *site_parts,
 ]
 if kb_parts:
-    out += ["# РОЗДІЛ 2. Внутрішні матеріали (питання-відповіді, відомі помилки)", *kb_parts]
+    out += ["# РОЗДІЛ 2. Питання-відповіді", *kb_parts]
+if private_parts:
+    out += ["# РОЗДІЛ 3. Закриті матеріали (відомі помилки, обходи, внутрішнє)", *private_parts]
 
 OUT.write_text("\n\n---\n\n".join(out) + "\n", encoding="utf-8")
-print(f"{OUT}: статей сайту {len(site_parts)}, з kb/ {len(kb_parts)}, {len(OUT.read_text(encoding='utf-8'))} символів")
+print(f"{OUT}: сайт {len(site_parts)}, kb/ {len(kb_parts)}, aedoc-kb {len(private_parts)}"
+      f"{'' if PRIVATE.exists() else ' (приватний репозиторій не знайдено: ' + str(PRIVATE) + ')'}, "
+      f"{len(OUT.read_text(encoding='utf-8'))} символів")
