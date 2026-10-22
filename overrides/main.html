@@ -12,3 +12,25 @@
   <a class="dlbar__btn dlbar__btn--tg" href="{{ a.support_url }}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M9.78 15.27 9.4 20.6c.54 0 .78-.23 1.06-.51l2.55-2.43 5.28 3.86c.97.53 1.65.25 1.91-.89l3.46-16.2c.31-1.43-.52-1.99-1.46-1.64L1.4 10.66c-1.39.54-1.37 1.31-.24 1.66l5.2 1.62 12.07-7.6c.57-.37 1.09-.17.66.21z"/></svg> Підтримка в Telegram</a>
 </div>
 {% endblock %}
+
+{#- Ліва колонка: лише головні розділи (як у прикладі); правіше — підрозділи активного розділу (navigation.tabs → md-nav--lifted) -#}
+{% set rail_icons = {"Головна": "home", "Інтеграція": "connection", "Служба AEDOC": "cog-transfer", "Навчання роботи з АЕДок": "school", "Тестування": "test-tube"} %}
+
+{% block site_nav %}
+  {% if nav %}
+    <div class="md-rail">
+      <ul class="md-rail__list">
+        {% for it in nav.items %}
+          <li class="md-rail__item{% if it.active %} md-rail__item--active{% endif %}">
+            {% set target = it.children[0] if it.is_section else it %}
+            <a class="md-rail__link" href="{{ target.url | url }}">
+              <span class="md-rail__icon">{% include ".icons/material/" ~ rail_icons.get(it.title, "book-open-variant") ~ ".svg" %}</span>
+              <span class="md-rail__title">{{ it.title }}</span>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+  {{ super() }}
+{% endblock %}

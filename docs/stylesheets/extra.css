@@ -214,3 +214,25 @@
 .md-typeset .flow--prro{--c:#ea580c}.md-typeset .flow--return{--c:#dc2626}.md-typeset .flow--ppn{--c:#7c3aed}.md-typeset .flow--canceled{--c:#6b7280}
 @media (max-width:900px){.md-typeset .flow-nav{grid-template-columns:1fr 1fr}}
 @media (max-width:600px){.md-typeset .flow__step{margin-left:44px;padding:14px 16px}.md-typeset .flow__step::before{left:-44px;width:32px;height:32px}.md-typeset .flow__step:not(:last-child)::after{left:-29px;top:46px}}
+
+/* ===== Дві колонки меню: ліва — головні розділи, правіше — підрозділи активного розділу ===== */
+.md-tabs{display:none}
+.md-rail{display:none}
+@media (min-width:76.25em){
+  .md-rail{display:block;position:sticky;top:2.4rem;align-self:flex-start;flex-shrink:0;width:11.5rem;height:calc(100vh - 2.4rem);overflow-y:auto;
+    background:#3D6BA0;margin:0 1rem 0 0;padding:.8rem 0}
+  .md-rail__list{list-style:none;margin:0;padding:0}
+  .md-rail__link{display:flex;align-items:center;gap:.7rem;padding:.65rem 1rem;color:#fff!important;font-size:.72rem;font-weight:700;line-height:1.3;
+    border-left:4px solid transparent;text-decoration:none}
+  .md-rail__link:hover{background:rgba(255,255,255,.1)}
+  .md-rail__item--active>.md-rail__link{background:#2F5580;border-left-color:#D9B84A}
+  .md-rail__icon{display:flex;flex-shrink:0;width:1.2rem;height:1.2rem}
+  .md-rail__icon svg{width:100%;height:100%;fill:currentColor}
+  .md-main__inner{margin-top:0!important}
+  .md-content__inner{margin-top:1.2rem}
+  /* підрозділи: назва активного розділу — заголовок колонки */
+  .md-nav--lifted>.md-nav__list>.md-nav__item--active>.md-nav__link{font-size:.8rem;font-weight:700;color:#2E5583!important;padding-top:1rem;background:none!important;
+    border:none!important;margin:0!important;box-shadow:none}
+  .md-nav--lifted>.md-nav__list>.md-nav__item--active>.md-nav__link *{color:#2E5583!important}
+  .md-nav--primary>.md-nav__list>.md-nav__item--section{margin-top:0}
+}
