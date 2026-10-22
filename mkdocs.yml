@@ -22,6 +22,14 @@ theme:
     primary: custom
     accent: custom
 
+plugins:
+  - search
+  - git-revision-date-localized:
+      type: custom
+      custom_format: "%d.%m.%Y %H:%M"
+      timezone: Europe/Kyiv
+      fallback_to_build_date: true
+
 nav:
   - Головна: index.md
   - Інтеграція:

@@ -1,0 +1,10 @@
+{#- Остання зміна сторінки — дата й час останнього коміту файлу (git-revision-date-localized) -#}
+{% set updated = page.meta.git_revision_date_localized if page.meta else none %}
+{% if updated %}
+  <aside class="md-source-file">
+    <span class="md-source-file__fact">
+      <span class="md-icon">{% include ".icons/material/clock-edit-outline.svg" %}</span>
+      Остання зміна: {{ updated }}
+    </span>
+  </aside>
+{% endif %}
