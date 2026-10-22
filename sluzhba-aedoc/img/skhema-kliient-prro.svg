@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1140 500" font-family="Inter, Montserrat, Segoe UI, Arial, sans-serif" role="img" aria-label="Схема AEDOC Клієнт для ПРРО: еАкциз передає залишок акцизних марок об'єкта ЕО клієнту на касовому комп'ютері; каса ПРРО перевіряє в клієнта марку зі штрихкодом товару і повідомляє про продаж; чек ПРРО йде в ЦОД РРО, звідти марки — в еАкциз; клієнт перевіряє в еАкциз, що продані марки погашено">
+  <defs>
+    <marker id="kp-ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6B7280"/></marker>
+    <marker id="kp-ahb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3D6BA0"/></marker>
+    <filter id="kp-sh" x="-5%" y="-5%" width="110%" height="120%"><feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-color="#1A1A1A" flood-opacity="0.08"/></filter>
+  </defs>
+
+  <!-- ===== касовий комп'ютер (рамка) ===== -->
+  <rect x="330" y="24" width="780" height="290" rx="10" fill="#FAFBFC" stroke="#9CA3AF" stroke-width="1.4" stroke-dasharray="7 5"/>
+  <text x="350" y="50" font-size="13" font-weight="600" fill="#6B7280">Касовий комп'ютер магазину</text>
+
+  <!-- ===== зв'язки ===== -->
+  <!-- еАкциз -> клієнт : залишок (1) -->
+  <line x1="222" y1="130" x2="356" y2="130" stroke="#3D6BA0" stroke-width="2.2" marker-end="url(#kp-ahb)"/>
+  <circle cx="238" cy="108" r="11" fill="#fff" stroke="#3D6BA0"/><text x="238" y="112.5" text-anchor="middle" font-size="12" font-weight="700" fill="#3D6BA0">1</text>
+  <text x="254" y="113" font-size="13" font-weight="700" fill="#3D6BA0">Залишок</text>
+  <text x="232" y="152" font-size="12" fill="#6B7280">кожні 15 хв</text>
+
+  <!-- клієнт -> еАкциз : перевірка погашення (5) -->
+  <line x1="356" y1="226" x2="222" y2="226" stroke="#6B7280" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#kp-ah)"/>
+  <circle cx="238" cy="204" r="11" fill="#fff" stroke="#3D6BA0"/><text x="238" y="208.5" text-anchor="middle" font-size="12" font-weight="700" fill="#3D6BA0">5</text>
+  <text x="254" y="209" font-size="13" fill="#1A1A1A">Погашено?</text>
+  <text x="232" y="248" font-size="12" fill="#6B7280">раз на годину</text>
+
+  <!-- каса -> клієнт : марка + штрихкод (2) -->
+  <line x1="846" y1="120" x2="626" y2="120" stroke="#6B7280" stroke-width="1.6" marker-end="url(#kp-ah)"/>
+  <circle cx="652" cy="100" r="11" fill="#fff" stroke="#3D6BA0"/><text x="652" y="104.5" text-anchor="middle" font-size="12" font-weight="700" fill="#3D6BA0">2</text>
+  <text x="670" y="105" font-size="13" fill="#1A1A1A">Марка + штрихкод товару</text>
+  <!-- клієнт -> каса : відповідь -->
+  <line x1="626" y1="160" x2="846" y2="160" stroke="#6B7280" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#kp-ah)"/>
+  <text x="652" y="183" font-size="12" fill="#6B7280">можна / причина відмови</text>
+  <!-- каса -> клієнт : продаж (3) -->
+  <line x1="846" y1="240" x2="626" y2="240" stroke="#6B7280" stroke-width="1.6" marker-end="url(#kp-ah)"/>
+  <circle cx="652" cy="220" r="11" fill="#fff" stroke="#3D6BA0"/><text x="652" y="224.5" text-anchor="middle" font-size="12" font-weight="700" fill="#3D6BA0">3</text>
+  <text x="670" y="225" font-size="13" fill="#1A1A1A">Продаж: № чека</text>
+  <text x="652" y="262" font-size="12" fill="#6B7280">API або папка inbox</text>
+
+  <!-- каса -> ЦОД РРО : чек (4) -->
+  <line x1="968" y1="282" x2="968" y2="368" stroke="#6B7280" stroke-width="1.6" marker-end="url(#kp-ah)"/>
+  <circle cx="942" cy="338" r="11" fill="#fff" stroke="#3D6BA0"/><text x="942" y="342.5" text-anchor="middle" font-size="12" font-weight="700" fill="#3D6BA0">4</text>
+  <text x="924" y="343" text-anchor="end" font-size="13" fill="#1A1A1A">Чек ПРРО</text>
+
+  <!-- ЦОД РРО -> еАкциз : марки з чека -->
+  <polyline points="846,430 125,430 125,264" fill="none" stroke="#6B7280" stroke-width="1.6" marker-end="url(#kp-ah)"/>
+  <text x="480" y="420" text-anchor="middle" font-size="13" fill="#1A1A1A">Акцизні марки з чека → статус «Погашено ЕМ»</text>
+
+  <!-- ===== вузли ===== -->
+  <!-- еАкциз -->
+  <g filter="url(#kp-sh)">
+    <rect x="30" y="96" width="190" height="166" rx="6" fill="#fff" stroke="#E5E7EB"/>
+    <rect x="30" y="96" width="4" height="166" fill="#D9B84A"/>
+  </g>
+  <text x="52" y="132" font-size="20" font-weight="700" fill="#1A1A1A">еАкциз</text>
+  <text x="52" y="154" font-size="13" fill="#6B7280">Електронна система</text>
+  <text x="52" y="172" font-size="13" fill="#6B7280">обігу акцизних марок</text>
+  <text x="52" y="200" font-size="12" fill="#6B7280">xtrace.gov.ua</text>
+  <text x="52" y="232" font-size="12" font-weight="600" fill="#3D6BA0">API-токен ЕО</text>
+
+  <!-- клієнт для ПРРО -->
+  <g filter="url(#kp-sh)">
+    <rect x="358" y="72" width="266" height="220" rx="6" fill="#F3F6FA" stroke="#3D6BA0"/>
+    <rect x="358" y="72" width="4" height="220" fill="#3D6BA0"/>
+  </g>
+  <text x="382" y="106" font-size="20" font-weight="700" fill="#1A1A1A">AEDOC</text>
+  <text x="382" y="130" font-size="17" font-weight="700" fill="#1A1A1A">Клієнт для ПРРО</text>
+  <text x="382" y="154" font-size="13" fill="#6B7280">служба Windows + трей</text>
+  <text x="382" y="172" font-size="13" fill="#6B7280">залишок марок свого</text>
+  <text x="382" y="190" font-size="13" fill="#6B7280">об'єкта ЕО на диску</text>
+  <text x="382" y="222" font-size="12" font-weight="600" fill="#3D6BA0">Відповідь касі за мить</text>
+  <text x="382" y="242" font-size="12" fill="#6B7280">Повтор продажу — відмова</text>
+  <text x="382" y="262" font-size="12" fill="#6B7280">Працює і без інтернету</text>
+
+  <!-- каса -->
+  <g filter="url(#kp-sh)">
+    <rect x="848" y="72" width="238" height="208" rx="6" fill="#fff" stroke="#E5E7EB"/>
+    <rect x="848" y="72" width="4" height="208" fill="#83B735"/>
+  </g>
+  <text x="872" y="106" font-size="20" font-weight="700" fill="#1A1A1A">Каса</text>
+  <text x="872" y="128" font-size="13" fill="#6B7280">Касова програма</text>
+  <text x="872" y="146" font-size="13" fill="#6B7280">ПРРО / РРО</text>
+  <text x="872" y="178" font-size="12" fill="#6B7280">сканує марку</text>
+  <text x="872" y="196" font-size="12" fill="#6B7280">і штрихкод товару</text>
+
+  <!-- ЦОД РРО -->
+  <g filter="url(#kp-sh)">
+    <rect x="848" y="370" width="238" height="110" rx="6" fill="#fff" stroke="#E5E7EB"/>
+    <rect x="848" y="370" width="4" height="110" fill="#1A1A1A"/>
+  </g>
+  <text x="872" y="406" font-size="20" font-weight="700" fill="#1A1A1A">ЦОД РРО</text>
+  <text x="872" y="428" font-size="13" fill="#6B7280">Сервер фіскалізації</text>
+  <text x="872" y="446" font-size="13" fill="#6B7280">ДПС України</text>
+</svg>
