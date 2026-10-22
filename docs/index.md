@@ -16,7 +16,7 @@ hide:
 <div class="dl dl--hero">
 <a class="dl__btn dl__btn--gold" href="https://aedoc.com.ua/download/%d0%ba%d0%be%d0%bd%d1%84%d1%96%d0%b3%d1%83%d1%80%d0%b0%d1%86%d1%96%d1%8f-%d0%b4%d0%bb%d1%8f-%d1%96%d0%bd%d1%82%d0%b5%d0%b3%d1%80%d1%86%d1%96%d1%97-%d0%b0%d0%b5%d0%b4%d0%be%d1%81-%d0%b5%d0%b0%d0%ba/?wpdmdl=1100&amp;masterkey=O9dcV8_ycmVqIXQktj0R3wCUZCvq4lylBo8OMxiQx9OZ8MXji0Jw51zc-ZujyD3AiFu3OYeX-0RPAWOekI4xLl3nt6g2-02p7RyS-Dg4yaAQ"><span class="dl__ico">⬇</span><span><b>Конфігурація</b><small>CF · 1,5 МБ · v1.0.1.7 від 01.10.2026</small></span></a>
 <a class="dl__btn" href="https://aedoc.com.ua/download/%d1%80%d0%be%d0%b7%d1%88%d0%b8%d1%80%d0%b5%d0%bd%d0%bd%d1%8f-%d0%b0%d0%b5%d0%b4%d0%be%d0%ba-%d0%b4%d0%bb%d1%8f-%d1%96%d0%bd%d1%82%d0%b5%d0%b3%d1%80%d0%b0%d1%86%d1%96%d1%97-bas-%d0%bc%d0%b0%d0%bb%d0%b8/?wpdmdl=961&amp;masterkey=OcfrThd5vLXuNNHUTBwEwV78gnSI2OGMMOViLd_7AeNiCmjAjv9N9ojm0AmCJY_pDjQA0hE6DZtF46YpioVLUur6G0LQWgZCSQjkqyYMdOmA"><span class="dl__ico">⬇</span><span><b>Розширення «Малий бізнес»</b><small>v1.0.1.7 від 01.10.2026 · керовані форми</small></span></a>
-<a class="dl__btn" href="https://aedoc.com.ua/download/%d0%bc%d0%be%d0%b4%d1%83%d0%bb%d1%8c-%d0%bf%d1%96%d0%b4%d0%bf%d0%b8%d1%81%d1%83-%d0%b5%d0%b0%d0%ba%d1%86%d0%b8%d0%b7/"><span class="dl__ico">🔐</span><span><b>Служба підпису AEDocSignService</b><small>обов'язкова для обох поставок</small></span></a>
+<a class="dl__btn" href="https://aedoc.com.ua/download/%d0%bc%d0%be%d0%b4%d1%83%d0%bb%d1%8c-%d0%bf%d1%96%d0%b4%d0%bf%d0%b8%d1%81%d1%83-%d0%b5%d0%b0%d0%ba%d1%86%d0%b8%d0%b7/"><span class="dl__ico">🔐</span><span><b>Служба AEDOC</b><small>підпис КЕП, сховище марок, каси — обов'язкова для обох поставок</small></span></a>
 </div>
 
 <ol class="hero__steps">
@@ -68,7 +68,7 @@ hide:
 
 <div class="card">
 <strong>Підпис КЕП з облікової системи</strong>
-<span>Служба підпису AEDocSignService підписує документи ключем користувача: обрали підписанта — ключ і пароль підставились.</span>
+<span><a href="sluzhba-aedoc/">Служба AEDOC</a> підписує документи ключем користувача: обрали підписанта — ключ і пароль підставились.</span>
 </div>
 
 <div class="card">
@@ -126,7 +126,7 @@ hide:
 
     1. [Технічна документація](integratsiia/itdeptinfo.md): вимоги до платформи, служба підпису, ліцензування, інтеграція з об'єктами вашої конфігурації і введення на підставі
     2. [Зберігання даних](integratsiia/zberigannia/index.md): приріст бази і зовнішнє сховище MS SQL
-    3. [HTTP-сервіс «Сховище марок» для ПРРО](integratsiia/skhovyshche-marok/index.md) і [API для касового ПЗ](integratsiia/skhovyshche-marok/rozrobnykam.md)
+    3. [Служба AEDOC](sluzhba-aedoc/index.md): режими роботи, встановлення, [каси](sluzhba-aedoc/kasy/index.md) і [API для касового ПЗ](sluzhba-aedoc/kasy/rozrobnykam.md)
     4. Розгорніть standalone-конфігурацію для тестів і пройдіть [повний цикл з відео](testuvannia/index.md)
 
 === "Аналітик"
@@ -136,7 +136,7 @@ hide:
     1. Подивіться [відео тестів](testuvannia/index.md) — як виглядає цикл від АЕД до чека
     2. [Технічна документація](integratsiia/itdeptinfo.md): схеми для роздрібної мережі, імпорту та опту
     3. [Тест навантаження](integratsiia/zberigannia/testuvannia.md): скільки займають 1000 АЕД і 1 млн марок
-    4. [Сховище марок](integratsiia/skhovyshche-marok/index.md) — для мереж з великою кількістю розподілених ПРРО, яким потрібен контроль статусу марок під час відвантаження на касі
+    4. [Каси і сховище марок](sluzhba-aedoc/kasy/index.md) — для мереж з великою кількістю розподілених ПРРО, яким потрібен контроль статусу марок під час відвантаження на касі
     5. Пройдіться по [інструкціях роботи з АЕД](aed/index.md) — так виглядатиме щоденна робота користувачів
 
 ## Розділи довідки
@@ -145,7 +145,12 @@ hide:
 
 <a class="card" href="integratsiia/">
 <strong>Інтеграція</strong>
-<span>Для ІТ і продакт-менеджерів: вимоги, типові рішення, зберігання даних, сховище марок.</span>
+<span>Для ІТ і продакт-менеджерів: вимоги, типові рішення, зберігання даних.</span>
+</a>
+
+<a class="card card--dev" href="sluzhba-aedoc/">
+<strong>Служба AEDOC</strong>
+<span>Підпис КЕП, сховище марок, каси і хмара: режими роботи, встановлення, API для касового ПЗ.</span>
 </a>
 
 <a class="card" href="navchannia/">

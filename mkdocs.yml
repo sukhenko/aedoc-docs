@@ -33,9 +33,13 @@ nav:
           - integratsiia/zberigannia/index.md
           - Емуляція навантаження 1000 документів АЕД: integratsiia/zberigannia/testuvannia.md
           - Зовнішнє сховище MS SQL: integratsiia/zberigannia/zovnishnie-skhovyshche.md
-      - HTTP-сервіс «Сховище марок» для ПРРО:
-          - integratsiia/skhovyshche-marok/index.md
-          - Для розробників (API): integratsiia/skhovyshche-marok/rozrobnykam.md
+  - Служба AEDOC:
+      - sluzhba-aedoc/index.md
+      - Режими роботи: sluzhba-aedoc/rezhymy.md
+      - Встановлення і налаштування: sluzhba-aedoc/vstanovlennia.md
+      - Каси:
+          - sluzhba-aedoc/kasy/index.md
+          - Для розробників (API): sluzhba-aedoc/kasy/rozrobnykam.md
   - Навчання роботи з АЕДок:
       - navchannia/index.md
       - Перший запуск:

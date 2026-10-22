@@ -9,5 +9,4 @@
 - [Зберігання даних підсистеми AEDOC](zberigannia/index.md)
     - [Емуляція навантаження 1000 документів АЕД](zberigannia/testuvannia.md)
     - [Зовнішнє сховище MS SQL Server](zberigannia/zovnishnie-skhovyshche.md)
-- [HTTP-сервіс «Сховище марок» для ПРРО](skhovyshche-marok/index.md) — актуальні статуси акцизних марок для ПРРО і РРО
-    - [Для розробників: API для касового ПЗ](skhovyshche-marok/rozrobnykam.md)
+- [Служба AEDOC](../sluzhba-aedoc/index.md) — підпис КЕП, сховище марок і каси: режими роботи, встановлення, [API для касового ПЗ](../sluzhba-aedoc/kasy/rozrobnykam.md)
