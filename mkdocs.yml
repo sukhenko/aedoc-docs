@@ -35,7 +35,9 @@ nav:
           - Зовнішнє сховище MS SQL: integratsiia/zberigannia/zovnishnie-skhovyshche.md
   - Служба AEDOC:
       - sluzhba-aedoc/index.md
-      - Режими роботи: sluzhba-aedoc/rezhymy.md
+      - Режими роботи:
+          - sluzhba-aedoc/rezhymy.md
+          - AEDOC Клієнт для ПРРО: sluzhba-aedoc/kliient-prro.md
       - Встановлення і налаштування: sluzhba-aedoc/vstanovlennia.md
       - Каси:
           - sluzhba-aedoc/kasy/index.md
