@@ -18,7 +18,6 @@
 - [Варіанти інтеграції підсистеми](https://dovidka.aedoc.com.ua/integratsiia/varianty/)
 - [Типові схеми руху підакцизних товарів](https://dovidka.aedoc.com.ua/integratsiia/typovi-skhemy/)
 - [Технічна документація для ІТ-фахівців, відповідальних за впровадження системи еАкциз](https://dovidka.aedoc.com.ua/integratsiia/itdeptinfo/)
-- [Довідка AEDOC для ІІ-асистентів](https://dovidka.aedoc.com.ua/integratsiia/dlia-shi/)
 - [Зберігання даних підсистеми AEDOC](https://dovidka.aedoc.com.ua/integratsiia/zberigannia/)
 - [Емуляція навантаження 1000 документів АЕД, з загальною кількістю 1 млн марок](https://dovidka.aedoc.com.ua/integratsiia/zberigannia/testuvannia/)
 - [Зовнішнє сховище MS SQL Server](https://dovidka.aedoc.com.ua/integratsiia/zberigannia/zovnishnie-skhovyshche/)
@@ -59,6 +58,10 @@
 
 - [Тестування](https://dovidka.aedoc.com.ua/testuvannia/)
 - [Роздріб ред.1 + ПРРО: від АЕД до чека](https://dovidka.aedoc.com.ua/testuvannia/rozdrib-prro/)
+
+## Для ІІ-асистентів
+
+- [Довідка AEDOC для ІІ-асистентів](https://dovidka.aedoc.com.ua/dlia-shi/)
 
 ## Для розробників касового ПЗ (ПРРО / РРО)
 
