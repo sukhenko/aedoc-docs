@@ -1,0 +1,2891 @@
+
+<!doctype html>
+<html lang="uk" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Довідка AEDOC з інтеграції еАкциз та навчання роботи з системою">
+      
+      
+      
+        <link rel="canonical" href="https://dovidka.aedoc.com.ua/sluzhba-aedoc/kasy/pidkliuchennia/">
+      
+      
+        <link rel="prev" href="../../kliient-prro/">
+      
+      
+        <link rel="next" href="../rozrobnykam/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="https://aedoc.com.ua/wp-content/uploads/2026/05/favicon-512x512-1.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Підключити офлайн клієнт - Довідка AEDOC з інтеграції еАкциз та навчання роботи з системою</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css?v=20261022-1">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#підключити-офлайн-клієнт-і-працювати-з-ним" class="md-skip">
+          Перейти до змісту
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+            
+
+<div class="dlbar">
+  <span class="dlbar__ver">AEDOC <b>v1.0.10</b> від 16.11.2026</span>
+  <span class="dlbar__links">
+    <a class="dlbar__btn dlbar__btn--gold" href="https://aedoc.com.ua/download/%d0%ba%d0%be%d0%bd%d1%84%d1%96%d0%b3%d1%83%d1%80%d0%b0%d1%86%d1%96%d1%8f-%d0%b4%d0%bb%d1%8f-%d1%96%d0%bd%d1%82%d0%b5%d0%b3%d1%80%d1%86%d1%96%d1%97-%d0%b0%d0%b5%d0%b4%d0%be%d1%81-%d0%b5%d0%b0%d0%ba/?wpdmdl=1100&masterkey=O9dcV8_ycmVqIXQktj0R3wCUZCvq4lylBo8OMxiQx9OZ8MXji0Jw51zc-ZujyD3AiFu3OYeX-0RPAWOekI4xLl3nt6g2-02p7RyS-Dg4yaAQ">⬇ Конфігурація <small>CF · 1,9 МБ</small></a>
+    <a class="dlbar__btn" href="https://aedoc.com.ua/download/%d1%80%d0%be%d0%b7%d1%88%d0%b8%d1%80%d0%b5%d0%bd%d0%bd%d1%8f-%d0%b0%d0%b5%d0%b4%d0%be%d0%ba-%d0%b4%d0%bb%d1%8f-%d1%96%d0%bd%d1%82%d0%b5%d0%b3%d1%80%d0%b0%d1%86%d1%96%d1%97-bas-%d0%bc%d0%b0%d0%bb%d0%b8/?wpdmdl=961&masterkey=OcfrThd5vLXuNNHUTBwEwV78gnSI2OGMMOViLd_7AeNiCmjAjv9N9ojm0AmCJY_pDjQA0hE6DZtF46YpioVLUur6G0LQWgZCSQjkqyYMdOmA">⬇ Розширення «Малий бізнес» <small>керовані форми</small></a>
+    <a class="dlbar__btn" href="https://aedoc.com.ua/download/%d0%bc%d0%be%d0%b4%d1%83%d0%bb%d1%8c-%d0%bf%d1%96%d0%b4%d0%bf%d0%b8%d1%81%d1%83-%d0%b5%d0%b0%d0%ba%d1%86%d0%b8%d0%b7/">🔐 Служба AEDOC</a>
+  </span>
+  <a class="dlbar__btn dlbar__btn--tg" href="https://t.me/AEDocBot" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M9.78 15.27 9.4 20.6c.54 0 .78-.23 1.06-.51l2.55-2.43 5.28 3.86c.97.53 1.65.25 1.91-.89l3.46-16.2c.31-1.43-.52-1.99-1.46-1.64L1.4 10.66c-1.39.54-1.37 1.31-.24 1.66l5.2 1.62 12.07-7.6c.57-.37 1.09-.17.66.21z"/></svg> Підтримка в Telegram</a>
+</div>
+
+          </div>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Хедер">
+    <a href="../../.." title="Довідка AEDOC з інтеграції еАкциз та навчання роботи з системою" class="md-header__button md-logo" aria-label="Довідка AEDOC з інтеграції еАкциз та навчання роботи з системою" data-md-component="logo">
+      
+  <img src="https://aedoc.com.ua/wp-content/uploads/2026/05/favicon-512x512-1.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Довідка AEDOC з інтеграції еАкциз та навчання роботи з системою
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Підключити офлайн клієнт
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Пошук" placeholder="Пошук" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Шукати">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Очистити" aria-label="Очистити" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Пошук розпочато
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Вкладки" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Головна
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../integratsiia/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Інтеграція
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Служба AEDOC
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../navchannia/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Навчання роботи з АЕДок
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../testuvannia/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Тестування
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+  
+    <div class="md-rail">
+      <ul class="md-rail__list">
+        
+          <li class="md-rail__item">
+            
+            <a class="md-rail__link" href="../../..">
+              <span class="md-rail__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg></span>
+              <span class="md-rail__title">Головна</span>
+            </a>
+          </li>
+        
+          <li class="md-rail__item">
+            
+            <a class="md-rail__link" href="../../../integratsiia/">
+              <span class="md-rail__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.4 7.5c.8.8.8 2.1 0 2.8l-2.8 2.8-7.8-7.8 2.8-2.8c.8-.8 2.1-.8 2.8 0l1.8 1.8 3-3 1.4 1.4-3 3zm-5.8 5.8-1.4-1.4-2.8 2.8-2.1-2.1 2.8-2.8-1.4-1.4-2.8 2.8-1.5-1.4-2.8 2.8c-.8.8-.8 2.1 0 2.8l1.8 1.8-4 4 1.4 1.4 4-4 1.8 1.8c.8.8 2.1.8 2.8 0l2.8-2.8-1.4-1.4z"/></svg></span>
+              <span class="md-rail__title">Інтеграція</span>
+            </a>
+          </li>
+        
+          <li class="md-rail__item md-rail__item--active">
+            
+            <a class="md-rail__link" href="../../">
+              <span class="md-rail__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 17h20v4H2zM6.25 7H9V6H6V3h8v3h-3v1h6.8c1 0 2 1 2.2 2l.5 7h-17l.55-7c0-1 1-2 2.2-2M13 9v2h5V9zM6 9v1h2V9zm3 0v1h2V9zm-3 2v1h2v-1zm3 0v1h2v-1zm-3 2v1h2v-1zm3 0v1h2v-1zM7 4v1h6V4z"/></svg></span>
+              <span class="md-rail__title">Контроль акцизних марок в ПРРО</span>
+            </a>
+          </li>
+        
+          <li class="md-rail__item">
+            
+            <a class="md-rail__link" href="../../../navchannia/">
+              <span class="md-rail__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17z"/></svg></span>
+              <span class="md-rail__title">Навчання роботи з АЕДок</span>
+            </a>
+          </li>
+        
+          <li class="md-rail__item">
+            
+            <a class="md-rail__link" href="../../../testuvannia/">
+              <span class="md-rail__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 2v2h1v14a4 4 0 0 0 4 4 4 4 0 0 0 4-4V4h1V2zm4 14c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1m2-4c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1m1-5h-4V4h4z"/></svg></span>
+              <span class="md-rail__title">Тестування</span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  
+  
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Навігація" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Довідка AEDOC з інтеграції еАкциз та навчання роботи з системою" class="md-nav__button md-logo" aria-label="Довідка AEDOC з інтеграції еАкциз та навчання роботи з системою" data-md-component="logo">
+      
+  <img src="https://aedoc.com.ua/wp-content/uploads/2026/05/favicon-512x512-1.png" alt="logo">
+
+    </a>
+    Довідка AEDOC з інтеграції еАкциз та навчання роботи з системою
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Головна
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../integratsiia/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Інтеграція
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Інтеграція
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../integratsiia/sandbox/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Тестування (Sandbox)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../integratsiia/varianty/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Варіанти інтеграції
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../integratsiia/typovi-skhemy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Типові схеми руху підакцизних товарів
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../integratsiia/itdeptinfo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Технічна документація
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../integratsiia/dlia-shi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Довідка для ІІ-асистентів
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../integratsiia/zberigannia/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Зберігання даних
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Зберігання даних
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../integratsiia/zberigannia/testuvannia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Емуляція навантаження 1000 документів АЕД
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../integratsiia/zberigannia/zovnishnie-skhovyshche/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Зовнішнє сховище MS SQL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../integratsiia/zberigannia/maister-mihratsii/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Майстер міграції сховища
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Служба AEDOC
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Служба AEDOC
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rezhymy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ролі та режими роботи
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vstanovlennia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Встановлення і налаштування
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Каси ПРРО / РРО
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_4" id="__nav_3_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Каси ПРРО / РРО
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kliient-prro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AEDoc Офлайн клієнт для ПРРО
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Підключити офлайн клієнт
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Підключити офлайн клієнт
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Зміст">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Зміст
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#з-облікової-програми-тип-хмара" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        З облікової програми (тип «Хмара»)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="З облікової програми (тип «Хмара»)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-отримати-код-в-обліковій-програмі" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Отримати код в обліковій програмі
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-ввести-код-на-касі" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Ввести код на касі
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#з-еакциз-тип-локальна" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        З еАкциз (тип «Локальна»)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zminyty-tochku" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Змінити точку, оператора або тип каси
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#керування-касами-в-обліковій-програмі" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Керування касами в обліковій програмі
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kasa-bez-zviazku" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Каса без зв'язку і попередження
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rozrobnykam/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Для розробників касового ПЗ (API)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../navchannia/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Навчання роботи з АЕДок
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Навчання роботи з АЕДок
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../pershyi-zapusk/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Перший запуск
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Перший запуск
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pershyi-zapusk/reiestratsiia-eo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Реєстрація в еАкциз
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pershyi-zapusk/api-token/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. API-токен
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pershyi-zapusk/pomichnyk-eo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Помічник додавання ЕО
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pershyi-zapusk/nastupni-kroky/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Підпис і доступи
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../aed/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Робота з АЕД
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Робота з АЕД
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3_2" id="__nav_4_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    АЕД №1 (Відвантаження)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    АЕД №1 (Відвантаження)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../aed/pryiom-vkhidnoho-aed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Прийняти вхідний АЕД №1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../aed/vidkhylennia-aed1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Відхилити вхідний АЕД №1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3_3" id="__nav_4_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    АЕД №4 (Повернення)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    АЕД №4 (Повернення)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../aed/aed4-povernennia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Повернути акцизні марки на підставі АЕД №1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3_4" id="__nav_4_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    АЕД №7 (Переміщення)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    АЕД №7 (Переміщення)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../aed/aed7-peremishchennia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Перемістити акцизні марки між торговими об'єктами
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../dovidnyky/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Довідники
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Довідники
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../dovidnyky/korystuvachi-eo-kliuch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Користувачі ЕО та ключ ЕЦП
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4_3" id="__nav_4_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Контрагенти ЕО (створення, доступ)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Контрагенти ЕО (створення, доступ)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../dovidnyky/dodaty-kontragenta-eo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Новий контрагент ЕО
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../dovidnyky/dostup-do-obiektiv/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Торгові об'єкти та доступи
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../zvity/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Звіти
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Звіти
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_5_2" id="__nav_4_5_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Залишки
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Залишки
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../zvity/zapyt-zalyshkiv/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Запит залишків акцизних марок по ЕО
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_5_3" id="__nav_4_5_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Рух марки
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Рух марки
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../zvity/rukh-marky/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Рух акцизної марки в еАкциз
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../testuvannia/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Тестування
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Тестування
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../testuvannia/rozdrib-prro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Роздріб ред.1 + ПРРО
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Зміст">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Зміст
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#з-облікової-програми-тип-хмара" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        З облікової програми (тип «Хмара»)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="З облікової програми (тип «Хмара»)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-отримати-код-в-обліковій-програмі" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Отримати код в обліковій програмі
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-ввести-код-на-касі" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Ввести код на касі
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#з-еакциз-тип-локальна" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        З еАкциз (тип «Локальна»)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zminyty-tochku" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Змінити точку, оператора або тип каси
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#керування-касами-в-обліковій-програмі" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Керування касами в обліковій програмі
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kasa-bez-zviazku" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Каса без зв'язку і попередження
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="підключити-офлайн-клієнт-і-працювати-з-ним">Підключити офлайн клієнт і працювати з ним<a class="headerlink" href="#підключити-офлайн-клієнт-і-працювати-з-ним" title="Permanent link">&para;</a></h1>
+<p>Як підключити <a href="../../kliient-prro/">AEDoc Офлайн клієнт для ПРРО</a> на касовому комп'ютері магазину, змінити точку чи оператора і що робити, коли каса показує попередження. Способи підключення й різниця між ними — на сторінці <a href="../">Каси</a>.</p>
+<h2 id="з-облікової-програми-тип-хмара">З облікової програми (тип «Хмара»)<a class="headerlink" href="#з-облікової-програми-тип-хмара" title="Permanent link">&para;</a></h2>
+<p>Підходить для віддалених магазинів з окремим інтернетом. На касі не потрібен ключ API еАкциз — касу підключають одноразовим кодом.</p>
+<div class="admonition info">
+<p class="admonition-title">Перед початком</p>
+<ul>
+<li>В обліковій програмі марки зберігаються в сховищі MS SQL (режим SQL, <a href="../../../integratsiia/zberigannia/maister-mihratsii/">майстер міграції</a>).</li>
+<li>На сервері обліку в треї AEDOC увімкнено <strong>«Хмара»</strong> («Налаштування» → «Хмара» → «Увімкнути хмару (каси магазинів)»).</li>
+<li>На касовому комп'ютері встановлено AEDOC з роллю <strong>«Каса: офлайн клієнт обліку марок»</strong> (<a href="../../vstanovlennia/">Встановлення</a>).</li>
+</ul>
+</div>
+<h3 id="1-отримати-код-в-обліковій-програмі">1. Отримати код в обліковій програмі<a class="headerlink" href="#1-отримати-код-в-обліковій-програмі" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Відкрийте <strong>«Об'єкти ЕО»</strong> (або картку своєї організації ЕО, закладка «Об'єкти ЕО»), виділіть магазин і натисніть <strong>«Каси точки»</strong>.</li>
+<li><strong>«Підключити касу»</strong> → оберіть фіскальний номер ПРРО каси (10 цифр) зі списку або <strong>«Ввести ФН вручну…»</strong>.</li>
+<li>Відкриється вікно <strong>«Код підключення каси»</strong>: код із 6 цифр, діє <strong>15 хвилин</strong> і лише один раз.</li>
+</ol>
+<p>Якщо точку вже обслуговує інша служба або касу з цим ФН уже підключено, програма запитає, чи перехопити / перепідключити: стара каса буде відключена.</p>
+<h3 id="2-ввести-код-на-касі">2. Ввести код на касі<a class="headerlink" href="#2-ввести-код-на-касі" title="Permanent link">&para;</a></h3>
+<ol>
+<li>На касі відкрийте трей <strong>AEDOC</strong> → <strong>«Підключити точку»</strong> (майстер «Підключення точки» відкривається й сам при першому запуску).</li>
+<li>Крок <strong>«Тип каси»</strong> → <strong>«Хмара»</strong> → <strong>«Далі»</strong>.</li>
+<li>Крок <strong>«Код підключення»</strong> — введіть код → <strong>«Підключити»</strong>.</li>
+<li>Крок <strong>«Завантаження»</strong> — каса отримує залишок марок своєї точки. Вікно можна закрити: завантаження продовжиться.</li>
+</ol>
+<p><strong>Результат:</strong> вікно коду в обліковій програмі закривається саме, у списку «Каси точки» з'являється каса зі станом «зелений». На касі в треї: «✓ Підключено: точка …, ФН …».</p>
+<h2 id="з-еакциз-тип-локальна">З еАкциз (тип «Локальна»)<a class="headerlink" href="#з-еакциз-тип-локальна" title="Permanent link">&para;</a></h2>
+<p>Для магазину без облікової програми: <a href="../../kliient-prro/">AEDoc Офлайн клієнт для ПРРО</a> сам бере залишок з еАкциз. У майстрі «Підключення точки»:</p>
+<ol>
+<li><strong>«Тип каси»</strong> → <strong>«Локальна»</strong>.</li>
+<li><strong>«Ключ API»</strong> — сервер еАкциз і ключ API з кабінету еАкциз → <strong>«Перевірити»</strong>. Якщо операторів кілька — оберіть свого; неактивного оператора обрати не можна.</li>
+<li><strong>«Об'єкт»</strong> — пошук за кодом (<code>15C</code>), адресою або типом; роздрібні об'єкти показано першими.</li>
+<li><strong>«Підтвердження»</strong> — перевірте оператора, точку й адресу → <strong>«Застосувати»</strong>.</li>
+<li><strong>«Центр мережі»</strong> — необов'язково: код із центру мережі, якщо магазини об'єднані в мережу. Без центру каса працює як завжди.</li>
+<li><strong>«Завантаження»</strong> — залишок марок вивантажується вікнами по 30 днів; потім дозавантажуються штрихкоди товарів.</li>
+</ol>
+<p>Ключ API зберігається зашифрованим лише на цьому комп'ютері.</p>
+<h2 id="zminyty-tochku">Змінити точку, оператора або тип каси<a class="headerlink" href="#zminyty-tochku" title="Permanent link">&para;</a></h2>
+<p>У треї каси — <strong>«Змінити точку»</strong>: відкриється той самий майстер з поточними значеннями.</p>
+<ul>
+<li><strong>Інша точка або оператор (локальна):</strong> залишок очиститься й завантажиться заново; невідправлені й непогашені продажі зберігаються. Підключення до центру мережі доведеться повторити новим кодом.</li>
+<li><strong>Інша точка (хмара):</strong> потрібен новий код для нової точки. Якщо на касі є невідправлені продажі старої точки, майстер попередить: з кодом іншої точки вони не будуть передані в облікову програму.</li>
+<li><strong>Інший тип каси (локальна ⇄ хмара):</strong> служба поточного типу зупиняється, дані обох служб зберігаються. Windows попросить підтвердження прав адміністратора.</li>
+</ul>
+<p>Скасування на будь-якому кроці нічого не змінює.</p>
+<h2 id="керування-касами-в-обліковій-програмі">Керування касами в обліковій програмі<a class="headerlink" href="#керування-касами-в-обліковій-програмі" title="Permanent link">&para;</a></h2>
+<p>Форма <strong>«Каси точки»</strong>: «ФН», «ПК», «На зв'язку», «Остання активність», «Стан», «Марок», «Черга», «Ключ до».</p>
+<table>
+<thead>
+<tr>
+<th>Кнопка</th>
+<th>Що робить</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>«Підключити касу»</strong></td>
+<td>новий код для каси</td>
+</tr>
+<tr>
+<td><strong>«Перепідключити»</strong></td>
+<td>новий код для тієї ж каси, стара відключається (заміна комп'ютера)</td>
+</tr>
+<tr>
+<td><strong>«Відключити»</strong></td>
+<td>каса перестає отримувати залишок; продажі накопичуються на касі до нового підключення</td>
+</tr>
+<tr>
+<td><strong>«Оновити залишок повністю»</strong></td>
+<td>вивантажити залишок точки заново, каси не відключаються</td>
+</tr>
+</tbody>
+</table>
+<p>Ті самі дії є на сервері обліку в треї, розділ <strong>«Точки й каси»</strong> — там видно всі точки й каси, локальні й хмарні.</p>
+<h2 id="kasa-bez-zviazku">Каса без зв'язку і попередження<a class="headerlink" href="#kasa-bez-zviazku" title="Permanent link">&para;</a></h2>
+<p>Каса продає й без інтернету — за останнім отриманим залишком. Продажі чекають на касі й відправляються, щойно зв'язок відновиться; в обліковій програмі марка отримує статус <strong>«Погашено ЕМ»</strong> з номером чека.</p>
+<table>
+<thead>
+<tr>
+<th>Що показує каса (трей, «Стан»)</th>
+<th>Що це означає</th>
+<th>Що робити</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>«Працює з попередженням»</strong>: немає зв'язку — каса працює за снимком; продажі чекають відправки</td>
+<td>інтернет або хмара недоступні</td>
+<td>перевірити інтернет; продажі відправляться самі</td>
+</tr>
+<tr>
+<td>залишок може бути неактуальним: облікова програма не на зв'язку</td>
+<td>облікова програма давно не робила обмін</td>
+<td>перевірити, що облікова програма й регламентні завдання працюють</td>
+</tr>
+<tr>
+<td><strong>«Помилка»</strong>: залишок неактуальний — немає зв'язку довше N хв</td>
+<td>зв'язку немає довше налаштованого часу (за замовчуванням 15 хв)</td>
+<td>відновити зв'язок; продавати можна, але залишок застарів</td>
+</tr>
+<tr>
+<td>залишок неактуальний: дзеркало заморожене</td>
+<td>в обліковій програмі виконується <a href="../../../integratsiia/zberigannia/maister-mihratsii/">майстер міграції</a></td>
+<td>дочекатися завершення міграції</td>
+</tr>
+<tr>
+<td>ключ закінчується / ключ прострочено</td>
+<td>строк ключа каси минає</td>
+<td>у «Каси точки» — «Перепідключити» і новий код</td>
+</tr>
+<tr>
+<td>касу відключено від центру мережі — потрібен новий код</td>
+<td>касу відключили в центрі мережі</td>
+<td>новий код у центрі: «Точки й каси» → «Підключити касу»</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Повторний продаж марки</strong> (та сама марка на двох касах) облікова програма не проводить: марка отримує статус «Порушення (подвійний продаж)», а розбіжність — у протокол обміну. Потрібно зробити повернення за одним із чеків.</p>
+
+
+  <aside class="md-source-file">
+    <span class="md-source-file__fact">
+      <span class="md-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg></span>
+      Остання зміна: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-custom" title="16 листопада 2026 р. 17:02:33 EET">16.11.2026 17:02</span>
+    </span>
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Повернутись нагору
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Футер" >
+        
+          
+          <a href="../../kliient-prro/" class="md-footer__link md-footer__link--prev" aria-label="Назад: AEDoc Офлайн клієнт для ПРРО">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Назад
+              </span>
+              <div class="md-ellipsis">
+                AEDoc Офлайн клієнт для ПРРО
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../rozrobnykam/" class="md-footer__link md-footer__link--next" aria-label="Вперед: Для розробників касового ПЗ (API)">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Вперед
+              </span>
+              <div class="md-ellipsis">
+                Для розробників касового ПЗ (API)
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © WebCheck — <a href="https://aedoc.com.ua">aedoc.com.ua</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.indexes", "navigation.expand", "navigation.top", "navigation.footer", "toc.follow", "search.highlight"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0456\u0439\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u0421\u043a\u043e\u043f\u0456\u044e\u0432\u0430\u0442\u0438 \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0429\u0435 1 \u0437\u0431\u0456\u0433 \u043d\u0430 \u0446\u0456\u0439 \u0441\u0442\u043e\u0440\u0456\u043d\u0446\u0456", "search.result.more.other": "\u0429\u0435 # \u0437\u0431\u0456\u0433\u0456\u0432 \u043d\u0430 \u0446\u0456\u0439 \u0441\u0442\u043e\u0440\u0456\u043d\u0446\u0456", "search.result.none": "\u0417\u0431\u0456\u0433\u0456\u0432 \u043d\u0435 \u0437\u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u0417\u043d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0437\u0431\u0456\u0433", "search.result.other": "\u0417\u043d\u0430\u0439\u0434\u0435\u043d\u043e # \u0437\u0431\u0456\u0433\u0456\u0432", "search.result.placeholder": "\u0420\u043e\u0437\u043f\u043e\u0447\u043d\u0456\u0442\u044c \u043f\u0438\u0441\u0430\u0442\u0438 \u0434\u043b\u044f \u043f\u043e\u0448\u0443\u043a\u0443", "search.result.term.missing": "\u041d\u0435 \u0437\u043d\u0430\u0439\u0434\u0435\u043d\u043e \u0437\u0430\u043f\u0438\u0442\u0443", "select.version": "\u041e\u0431\u0440\u0430\u0442\u0438 \u0432\u0435\u0440\u0441\u0456\u044e"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../../javascripts/lightbox.js?v=20261011-1"></script>
+      
+    
+  </body>
+</html>

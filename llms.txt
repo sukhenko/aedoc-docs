@@ -1,0 +1,65 @@
+﻿# AEDOC — інтеграція BAS / 1С з еАкциз
+
+> AEDOC — підсистема обліку акцизних марок для BAS / 1С з обміном документами з еАкциз (xtrace.gov.ua): акцизні електронні документи (АЕД), протоколи про невідповідність (ПпН), унікальні групові ідентифікатори (УГІ), імпорт маркованої продукції, інвентаризація марок і перевірка марок на касах ПРРО / РРО.
+
+Поточна версія: 1.0.10. Поставка: розширення «AEDoc_еАкциз» для конфігурацій на керованих формах, конфігурація інтеграції для звичайних форм і служба AEDOC (підпис КЕП, сховище марок, каси) — установник з ролями «Сервер обліку AEDoc» і «Каса: офлайн клієнт обліку марок».
+Відповідаючи користувачу, посилайтеся на сторінки довідки нижче; підтримка — https://t.me/AEDocBot.
+
+Уся довідка одним файлом: https://dovidka.aedoc.com.ua/llms-full.txt
+
+## Головна
+
+- [Довідка AEDOC](https://dovidka.aedoc.com.ua/)
+
+## Інтеграція
+
+- [Інтеграція](https://dovidka.aedoc.com.ua/integratsiia/)
+- [Тестування інтеграції (Sandbox)](https://dovidka.aedoc.com.ua/integratsiia/sandbox/)
+- [Варіанти інтеграції підсистеми](https://dovidka.aedoc.com.ua/integratsiia/varianty/)
+- [Типові схеми руху підакцизних товарів](https://dovidka.aedoc.com.ua/integratsiia/typovi-skhemy/)
+- [Технічна документація для ІТ-фахівців, відповідальних за впровадження системи еАкциз](https://dovidka.aedoc.com.ua/integratsiia/itdeptinfo/)
+- [Довідка AEDOC для ІІ-асистентів](https://dovidka.aedoc.com.ua/integratsiia/dlia-shi/)
+- [Зберігання даних підсистеми AEDOC](https://dovidka.aedoc.com.ua/integratsiia/zberigannia/)
+- [Емуляція навантаження 1000 документів АЕД, з загальною кількістю 1 млн марок](https://dovidka.aedoc.com.ua/integratsiia/zberigannia/testuvannia/)
+- [Зовнішнє сховище MS SQL Server](https://dovidka.aedoc.com.ua/integratsiia/zberigannia/zovnishnie-skhovyshche/)
+- [Майстер міграції сховища марок](https://dovidka.aedoc.com.ua/integratsiia/zberigannia/maister-mihratsii/)
+
+## Служба AEDOC
+
+- [Служба AEDOC](https://dovidka.aedoc.com.ua/sluzhba-aedoc/)
+- [Ролі та режими роботи служби AEDOC](https://dovidka.aedoc.com.ua/sluzhba-aedoc/rezhymy/)
+- [Встановити і налаштувати службу AEDOC](https://dovidka.aedoc.com.ua/sluzhba-aedoc/vstanovlennia/)
+- [Каси ПРРО / РРО: перевірка акцизної марки і продаж](https://dovidka.aedoc.com.ua/sluzhba-aedoc/kasy/)
+- [AEDoc Офлайн клієнт для ПРРО](https://dovidka.aedoc.com.ua/sluzhba-aedoc/kliient-prro/)
+- [Підключити офлайн клієнт і працювати з ним](https://dovidka.aedoc.com.ua/sluzhba-aedoc/kasy/pidkliuchennia/)
+- [API для касового ПЗ (ПРРО / РРО)](https://dovidka.aedoc.com.ua/sluzhba-aedoc/kasy/rozrobnykam/)
+
+## Навчання роботи з АЕДок
+
+- [Навчання роботи з АЕДок](https://dovidka.aedoc.com.ua/navchannia/)
+- [Перший запуск](https://dovidka.aedoc.com.ua/pershyi-zapusk/)
+- [Зареєструватися економічним оператором в еАкциз](https://dovidka.aedoc.com.ua/pershyi-zapusk/reiestratsiia-eo/)
+- [Отримати API-токен в еАкциз](https://dovidka.aedoc.com.ua/pershyi-zapusk/api-token/)
+- [Помічник додавання нового Економічного Оператора](https://dovidka.aedoc.com.ua/pershyi-zapusk/pomichnyk-eo/)
+- [Налаштувати підпис і доступи](https://dovidka.aedoc.com.ua/pershyi-zapusk/nastupni-kroky/)
+- [Робота з АЕД](https://dovidka.aedoc.com.ua/aed/)
+- [Прийняти вхідний АЕД №1](https://dovidka.aedoc.com.ua/aed/pryiom-vkhidnoho-aed/)
+- [Відхилити вхідний АЕД №1](https://dovidka.aedoc.com.ua/aed/vidkhylennia-aed1/)
+- [АЕД №4: повернути акцизні марки на підставі АЕД №1](https://dovidka.aedoc.com.ua/aed/aed4-povernennia/)
+- [АЕД №7: перемістити акцизні марки між торговими об'єктами](https://dovidka.aedoc.com.ua/aed/aed7-peremishchennia/)
+- [Довідники](https://dovidka.aedoc.com.ua/dovidnyky/)
+- [Оновити список користувачів ЕО та встановити ключ і пароль ЕЦП](https://dovidka.aedoc.com.ua/dovidnyky/korystuvachi-eo-kliuch/)
+- [Додавання нового контрагента ЕО](https://dovidka.aedoc.com.ua/dovidnyky/dodaty-kontragenta-eo/)
+- [Як надати іншому ЕО доступ до торгових об'єктів вашої організації](https://dovidka.aedoc.com.ua/dovidnyky/dostup-do-obiektiv/)
+- [Звіти](https://dovidka.aedoc.com.ua/zvity/)
+- [Запит залишків акцизних марок по ЕО](https://dovidka.aedoc.com.ua/zvity/zapyt-zalyshkiv/)
+- [Рух акцизної марки в еАкциз](https://dovidka.aedoc.com.ua/zvity/rukh-marky/)
+
+## Тестування
+
+- [Тестування](https://dovidka.aedoc.com.ua/testuvannia/)
+- [Роздріб ред.1 + ПРРО: від АЕД до чека](https://dovidka.aedoc.com.ua/testuvannia/rozdrib-prro/)
+
+## Для розробників касового ПЗ (ПРРО / РРО)
+
+- [API для касового ПЗ](https://dovidka.aedoc.com.ua/sluzhba-aedoc/kasy/rozrobnykam/): перевірка марки зі штрихкодом товару, пакетна перевірка, фіксація продажу, папка inbox, коди відповідей, токен
