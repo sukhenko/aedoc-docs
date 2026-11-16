@@ -38,7 +38,6 @@ nav:
       - Варіанти інтеграції: integratsiia/varianty.md
       - Типові схеми руху підакцизних товарів: integratsiia/typovi-skhemy.md
       - Технічна документація: integratsiia/itdeptinfo.md
-      - Довідка для ІІ-асистентів: integratsiia/dlia-shi.md
       - Зберігання даних:
           - integratsiia/zberigannia/index.md
           - Емуляція навантаження 1000 документів АЕД: integratsiia/zberigannia/testuvannia.md
@@ -85,6 +84,7 @@ nav:
   - Тестування:
       - testuvannia/index.md
       - Роздріб ред.1 + ПРРО: testuvannia/rozdrib-prro.md
+  - Для ІІ-асистентів: dlia-shi/index.md
 
 extra_css:
   - stylesheets/extra.css?v=20261022-1
