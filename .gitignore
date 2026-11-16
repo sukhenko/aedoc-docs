@@ -5,3 +5,7 @@ raw3/
 raw4/
 aedoc-kb.md
 raw-sluzhba/
+
+# генеруються tools/build_llms.py під час публікації
+docs/llms.txt
+docs/llms-full.txt

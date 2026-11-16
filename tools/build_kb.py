@@ -17,6 +17,8 @@ ROOT = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(__file__).resolve().pare
 OUT = Path(sys.argv[2]) if len(sys.argv) > 2 else ROOT / "aedoc-kb.md"
 DOCS, KB = ROOT / "docs", ROOT / "kb"
 PRIVATE = Path(os.environ.get("AEDOC_KB_PRIVATE") or ROOT.parent / "aedoc-kb")
+# Публічна збірка (llms-full.txt на сайті): закритий aedoc-kb не береться ніколи
+PUBLIC = os.environ.get("AEDOC_KB_PUBLIC") == "1"
 SITE = "https://dovidka.aedoc.com.ua/"
 
 
@@ -112,14 +114,14 @@ def collect(folder, label):
         body = convert(src)
         title = meta.get("тема") or path.stem
         info = " · ".join(f"{k}: {v}" for k, v in meta.items() if k != "тема")
-        head = f"# {title}\n\nДжерело: {label} ({rel}), посилання клієнту не давати"
+        head = f"# {title}\n\nДжерело: " +("часті питання AEDOC" if PUBLIC else f"{label} ({rel}), посилання клієнту не давати")
         if info:
             head += f"\n{info}"
         parts.append(f"{head}\n\n{body}")
     return parts
 
 kb_parts = collect(KB, "kb")
-private_parts = collect(PRIVATE, "закрите, aedoc-kb")
+private_parts = [] if PUBLIC else collect(PRIVATE, "закрите, aedoc-kb")
 
 today = datetime.date.today().strftime("%d.%m.%Y")
 out = [
@@ -128,7 +130,7 @@ out = [
     f"закритих матеріалів: {len(private_parts)}.\n"
     "Кожен матеріал починається із заголовка `# ` і рядка `Джерело:`.\n"
     "Для статей сайту `Джерело` — адреса сторінки, її можна давати клієнту.\n"
-    "Розділи 2 і 3 на сайті не опубліковані: посилань на них клієнту не давати.\n"
+    + ("Розділ 2 — відповіді на часті питання; окремих сторінок на сайті в них немає.\n" if PUBLIC else "Розділи 2 і 3 на сайті не опубліковані: посилань на них клієнту не давати.\n") +
     "Скриншоти замінено їхнім описом у форматі [Скриншот: …].",
     "# РОЗДІЛ 1. Статті довідки dovidka.aedoc.com.ua",
     *site_parts,
