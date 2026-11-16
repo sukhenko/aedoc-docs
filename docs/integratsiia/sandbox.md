@@ -82,7 +82,7 @@ AEDOC інтегрується з наступними конфігурація�
 <p class="way__sub">Повноцінне тестування з власною тестовою базою</p>
 <ol>
 <li><strong>Інтегрувати конфігурацію</strong> — (див. <a href="#сумісність-з-конфігураціями-bas">таблицю сумісності</a> вище).</li>
-<li><strong>Встановити <a href="../../sluzhba-aedoc/vstanovlennia/">службу AEDOC</a></strong> (режим «Сервер обліку») для роботи з ключем КЕП.</li>
+<li><strong>Встановити <a href="../../sluzhba-aedoc/vstanovlennia/">службу AEDOC</a></strong> (роль «Сервер обліку AEDoc») для роботи з ключем КЕП.</li>
 </ol>
 <p><a class="way__btn way__btn--outline" href="../../pershyi-zapusk/pomichnyk-eo/">📖 Інструкція до майстра ЕО</a></p>
 <div class="creds">
