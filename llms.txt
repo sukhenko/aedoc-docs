@@ -23,13 +23,13 @@
 - [Зовнішнє сховище MS SQL Server](https://dovidka.aedoc.com.ua/integratsiia/zberigannia/zovnishnie-skhovyshche/)
 - [Майстер міграції сховища марок](https://dovidka.aedoc.com.ua/integratsiia/zberigannia/maister-mihratsii/)
 
-## Служба AEDOC
+## Контроль акцизних марок в ПРРО
 
+- [AEDoc Офлайн клієнт для ПРРО](https://dovidka.aedoc.com.ua/sluzhba-aedoc/kliient-prro/)
 - [Служба AEDOC](https://dovidka.aedoc.com.ua/sluzhba-aedoc/)
 - [Ролі та режими роботи служби AEDOC](https://dovidka.aedoc.com.ua/sluzhba-aedoc/rezhymy/)
 - [Встановити і налаштувати службу AEDOC](https://dovidka.aedoc.com.ua/sluzhba-aedoc/vstanovlennia/)
 - [Каси ПРРО / РРО: перевірка акцизної марки і продаж](https://dovidka.aedoc.com.ua/sluzhba-aedoc/kasy/)
-- [AEDoc Офлайн клієнт для ПРРО](https://dovidka.aedoc.com.ua/sluzhba-aedoc/kliient-prro/)
 - [Підключити офлайн клієнт і працювати з ним](https://dovidka.aedoc.com.ua/sluzhba-aedoc/kasy/pidkliuchennia/)
 - [API для касового ПЗ (ПРРО / РРО)](https://dovidka.aedoc.com.ua/sluzhba-aedoc/kasy/rozrobnykam/)
 
