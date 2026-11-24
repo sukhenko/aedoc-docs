@@ -43,13 +43,13 @@ nav:
           - Емуляція навантаження 1000 документів АЕД: integratsiia/zberigannia/testuvannia.md
           - Зовнішнє сховище MS SQL: integratsiia/zberigannia/zovnishnie-skhovyshche.md
           - Майстер міграції сховища: integratsiia/zberigannia/maister-mihratsii.md
-  - Служба AEDOC:
-      - sluzhba-aedoc/index.md
-      - Ролі та режими роботи: sluzhba-aedoc/rezhymy.md
-      - Встановлення і налаштування: sluzhba-aedoc/vstanovlennia.md
-      - Каси ПРРО / РРО:
-          - sluzhba-aedoc/kasy/index.md
-          - AEDoc Офлайн клієнт для ПРРО: sluzhba-aedoc/kliient-prro.md
+  - Контроль акцизних марок в ПРРО:
+      - AEDoc Офлайн клієнт для ПРРО: sluzhba-aedoc/kliient-prro.md
+      - Налаштування:
+          - sluzhba-aedoc/index.md
+          - Ролі та режими роботи: sluzhba-aedoc/rezhymy.md
+          - Встановлення і налаштування: sluzhba-aedoc/vstanovlennia.md
+          - Каси ПРРО / РРО: sluzhba-aedoc/kasy/index.md
           - Підключити офлайн клієнт: sluzhba-aedoc/kasy/pidkliuchennia.md
           - Для розробників касового ПЗ (API): sluzhba-aedoc/kasy/rozrobnykam.md
   - Навчання роботи з АЕДок:

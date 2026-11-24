@@ -149,9 +149,9 @@ hide:
 <span>Для ІТ і продакт-менеджерів: вимоги, типові рішення, зберігання даних.</span>
 </a>
 
-<a class="card card--dev" href="sluzhba-aedoc/">
-<strong>Служба AEDOC</strong>
-<span>Підпис КЕП, сховище марок, каси і хмара: режими роботи, встановлення, API для касового ПЗ.</span>
+<a class="card card--dev" href="sluzhba-aedoc/kliient-prro/">
+<strong>Контроль акцизних марок в ПРРО</strong>
+<span>AEDoc Офлайн клієнт для ПРРО: перевірка марки на касі за мить, продажі до погашення, без інтернету. Налаштування служби AEDOC, кас і API.</span>
 </a>
 
 <a class="card" href="navchannia/">

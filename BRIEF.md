@@ -62,10 +62,13 @@ BRIEF.md                 цей файл (не публікується)
   ├─ Зберігання даних
   │    ├─ Емуляція навантаження 1000 документів АЕД
   │    └─ Зовнішнє сховище MS SQL
-Служба AEDOC                                     sluzhba-aedoc/index.md
-  ├─ Режими роботи                              sluzhba-aedoc/rezhymy.md
-  ├─ Встановлення і налаштування                sluzhba-aedoc/vstanovlennia.md
-  └─ Каси                                       sluzhba-aedoc/kasy/index.md
+Контроль акцизних марок в ПРРО
+  ├─ AEDoc Офлайн клієнт для ПРРО (головна)     sluzhba-aedoc/kliient-prro.md
+  └─ Налаштування                               sluzhba-aedoc/index.md (Служба AEDOC)
+       ├─ Ролі та режими роботи                 sluzhba-aedoc/rezhymy.md
+       ├─ Встановлення і налаштування           sluzhba-aedoc/vstanovlennia.md
+       ├─ Каси ПРРО / РРО                       sluzhba-aedoc/kasy/index.md
+       ├─ Підключити офлайн клієнт              sluzhba-aedoc/kasy/pidkliuchennia.md
        └─ Для розробників (API)                 sluzhba-aedoc/kasy/rozrobnykam.md
 Навчання роботи з АЕДок
   ├─ Перший запуск: 1 Реєстрація в еАкциз · 2 API-токен · 3 Помічник додавання ЕО · 4 Підпис і доступи
