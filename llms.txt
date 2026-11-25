@@ -53,6 +53,7 @@
 - [Звіти](https://dovidka.aedoc.com.ua/zvity/)
 - [Запит залишків акцизних марок по ЕО](https://dovidka.aedoc.com.ua/zvity/zapyt-zalyshkiv/)
 - [Рух акцизної марки в еАкциз](https://dovidka.aedoc.com.ua/zvity/rukh-marky/)
+- [Помилки еАкциз і як їх виправити](https://dovidka.aedoc.com.ua/pomylky/)
 
 ## Тестування
 
